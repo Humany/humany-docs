@@ -2,9 +2,10 @@
 This feature requires an application with an interface widget which has defined notice categories.
 
 ## Request
-GET https://<application-name>.humany.net/<widget-name>/notices/<tab-name>
+  GET https://<application-name>.humany.net/<widget-name>/notices/<tab-name>
 
 ## Response
+```
 {
     // Notices are small notiications displayed in specific areas of the interface (top, middle, bottom)
     "Notices":[
@@ -44,10 +45,26 @@ GET https://<application-name>.humany.net/<widget-name>/notices/<tab-name>
         }
     ]
 }
+```
 
 ## Example
+```
+// REQUEST
 
-GET https://help.humany.net/admin-help-en/notices/
+var applicationName = "help";
+var interfaceName = "admin-help-en";
+var tabName = "";
+
+$.ajax({
+    url: "https://" + applicationName + ".humany.net/" + interfaceName + "/notices/" + tabName,
+    dataType: "json",
+    type : "GET",
+    success : function(r) {
+        console.log(r);
+    }
+});
+
+// OUTPUT
 
 {
     "Name":"index",
@@ -92,3 +109,4 @@ GET https://help.humany.net/admin-help-en/notices/
         }
     ]
 }
+```
