@@ -1,5 +1,5 @@
 # Notices API
-This feature requires an application with an interface widget which has defined notice categories.
+This feature requires an application with a widget which has defined notice categories.
 
 ## Request
   GET https://**:application-name**.humany.net/**:widget-name**/notices/**:tab-name**
@@ -7,7 +7,7 @@ This feature requires an application with an interface widget which has defined 
 ## Response
 ```
 {
-    // Notices are small notiications displayed in specific areas of the interface (top, middle, bottom)
+    // Notices are small notifications displayed in specific areas of the interface (top, middle, bottom)
     "Notices":[
         {
             // Content to display
@@ -19,7 +19,8 @@ This feature requires an application with an interface widget which has defined 
             "Type":"noticeRowTop"
         }
     ],
-    // NoticeLists are larger notifications displayed in specific order specified in admin. They can either have a title and be exapandable or be displayed as html
+    // NoticeLists are larger notifications displayed in specific order specified in admin.
+    // They can either have a title and be expandable or be displayed as inline html
     "NoticeLists":[
         {
             "Id":3323,
