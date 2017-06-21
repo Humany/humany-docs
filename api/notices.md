@@ -2,7 +2,7 @@
 This feature requires an application with an interface widget which has defined notice categories.
 
 ## Request
-  GET https://<application-name>.humany.net/<widget-name>/notices/<tab-name>
+  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:tab-name**
 
 ## Response
 ```
