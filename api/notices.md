@@ -2,7 +2,19 @@
 This feature requires an application with a widget which has defined notice categories.
 
 ## Request
-  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:tab-name**
+  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:page-name**
+
+### :application-name
+The name of your application.
+
+### :widget-name
+The name of the widget which has been configured to provide notices.
+
+### :page-name (optional)
+The name of the page/tab which has been configured with notice categories. If the name is omitted notices for the FAQ page are returned. To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name.
+
+### Custom parameters
+To pass custom parameters add a query string with the name of that paramter prefixed with "p.", e.g. ?p.customertype=value
 
 ## Response
 ```
