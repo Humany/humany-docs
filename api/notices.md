@@ -2,7 +2,7 @@
 This feature requires an application with a widget which has defined notice categories.
 
 ## Request
-  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:page-name**
+  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:page-name-or-notice-id**
 
 ### :application-name
 The name of your application.
@@ -10,13 +10,35 @@ The name of your application.
 ### :widget-name
 The name of the widget which has been configured to provide notices.
 
-### :page-name (optional)
-The name of the page/tab which has been configured with notice categories. If the name is omitted notices for the FAQ page are returned. To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name.
+### :page-name-or-notice-id (optional)
+If an integral value is specified, the corresponding notice ("single-item") will be returned.
+
+If the name of a page/tab is specified, returns the page along with the configured notices. (To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name)
+
+If the parameter is omitted, notices for the FAQ page will be returned.
 
 ### Custom parameters
 To pass custom parameters add a query string with the name of that paramter prefixed with "p.", e.g. ?p.customertype=value
 
-## Response
+## Response (single item)
+```
+{
+    "Body":"<p>html</p>\n",
+    "Attributes":{},
+    "Categories":[3324,3323],
+    "Created":"2017-03-29T08:46:58.79078Z",
+    "FirstPublishedDate":"2017-03-29T08:46:58.8338124Z",
+    "Id":3325,
+    "Modified":"2017-03-29T08:46:58.79078Z",
+    "Tags":[],
+    "Read":null,
+    "RelativeUrl":"n3325/",
+    "Title":"text",
+    "Type":"listNotice"
+}
+```
+
+## Response (page)
 ```
 {
     // Notices are small notifications displayed in specific areas of the interface (top, middle, bottom)
@@ -60,7 +82,7 @@ To pass custom parameters add a query string with the name of that paramter pref
 }
 ```
 
-## Example
+## Example (page)
 ```
 // REQUEST
 
