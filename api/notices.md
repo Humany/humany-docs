@@ -11,7 +11,7 @@ The name of your application.
 The name of the widget which has been configured to provide notices.
 
 ### :page-name-or-notice-id (optional)
-If an integral value is specified, the corresponding notice ("single-item") will be returned.
+If an id (integral value) is specified, the corresponding notice ("single-item") will be returned. **Special case regarding notice translations:** Given that the security settings of the current widget doesn't require authentication, and that the current notice is accessible on the current widget, you may also use this route to access the notices translations. The translations of a notice, if any, can be found on the "Translations" property.
 
 If the name of a page/tab is specified, returns the page along with the configured notices. (To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name)
 
@@ -27,8 +27,13 @@ To pass custom parameters add a query string with the name of that paramter pref
     "Attributes":{},
     "Categories":[3324,3323],
     "Created":"2017-03-29T08:46:58.79078Z",
-    "FirstPublishedDate":"2017-03-29T08:46:58.8338124Z",
+    "FirstPublishedDate":"2017-03-29T08:46:58.8338124Z",    
     "Id":3325,
+    "Translations": {
+      "sv": 3325,
+      "en": 1129,
+      "da": 108
+    },
     "Modified":"2017-03-29T08:46:58.79078Z",
     "Tags":[],
     "Read":null,
@@ -48,6 +53,11 @@ To pass custom parameters add a query string with the name of that paramter pref
             "Body":"<p>html</p>\n",
             "FirstPublishedDate":"2017-06-21T09:18:30.8229144Z",
             "Id":4329,
+            "Translations": {
+                "sv": 4329,
+                "en": 556,
+                "da": 901
+            },
             "Modified":"2017-06-21T09:18:30.7953853Z",
             // Specified area from admin
             "Type":"noticeRowTop"
@@ -69,6 +79,11 @@ To pass custom parameters add a query string with the name of that paramter pref
                     "Created":"2017-03-29T08:46:58.79078Z",
                     "FirstPublishedDate":"2017-03-29T08:46:58.8338124Z",
                     "Id":3325,
+                    "Translations": {
+                      "sv": 3325,
+                      "en": 1129,
+                      "da": 108
+                    },
                     "Modified":"2017-03-29T08:46:58.79078Z",
                     "Tags":[],
                     "Read":null,
@@ -111,6 +126,11 @@ $.ajax({
             "Created":"2017-06-21T09:18:30.7953853Z",
             "FirstPublishedDate":"2017-06-21T09:18:30.8229144Z",
             "Id":4329,
+            "Translations": {
+              "sv": 4329,
+              "en": 556,
+              "da": 901
+            },
             "Modified":"2017-06-21T09:18:30.7953853Z",
             "Tags":[],
             "Read":null,
@@ -133,6 +153,11 @@ $.ajax({
                     "Created":"2017-03-29T08:46:58.79078Z",
                     "FirstPublishedDate":"2017-03-29T08:46:58.8338124Z",
                     "Id":3325,
+                    "Translations": {
+                      "sv": 3325,
+                      "en": 1129,
+                      "da": 108
+                    },
                     "Modified":"2017-03-29T08:46:58.79078Z",
                     "Tags":[],
                     "Read":null,
