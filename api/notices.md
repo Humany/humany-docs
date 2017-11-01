@@ -11,7 +11,9 @@ The name of your application.
 The name of the widget which has been configured to provide notices.
 
 ### :page-name-or-notice-id (optional)
-If an id (integral value) is specified, the corresponding notice ("single-item") will be returned. **Special case regarding notice translations:** Given that the security settings of the current widget doesn't require authentication, and that the current notice is accessible on the current widget, you may also use this route to access the notices translations. The translations of a notice, if any, can be found on the "Translations" property.
+If an id (integral value) is specified, the corresponding notice ("single-item") will be returned.
+
+**Special case regarding notice translations:** Given that the security settings of the current widget doesn't require authentication, and that the current notice is accessible on the current widget, you may also use this route to access the notices translations. The translations of a notice, if any, can be found on the "Translations" property.
 
 If the name of a page/tab is specified, returns the page along with the configured notices. (To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name)
 
