@@ -1,6 +1,6 @@
 # This contains documentation on how to customize Humany widgets with both JavaScript and CSS.
 
-It is separated by widget type.
+_Separated by widget type_
 ## Inline & Lightbox 
 
 ## Floating
