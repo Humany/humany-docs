@@ -1,5 +1,5 @@
 # Custom adapter
-The following sample shows how to create and register a custom adapter on widgets. Custom adapters allows you to execute your own javascript code in response to posting a from in a Contact Method.
+The following sample shows how to create and register a custom adapter on widgets. Custom adapters allow you to execute your own javascript code in response to posting a form in a Contact Method.
 
 ### Prerequisites
 The implementation must be at version 2 or higher. The implementation can be upgraded from the Interfaces section and the UPGRADE button in the toolbar area. If no button is visible it means you are already using the latest version.
