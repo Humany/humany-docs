@@ -1,8 +1,8 @@
 # Custom adapter
-The following sample shows how to create and register a custom adapter on widgets. 
+The following sample shows how to create and register a custom adapter on widgets. Custom adapters allows you to execute your own javascript code in response to posting a from in a Contact Method.
 
 ### Prerequisites
-The implementation must be at version 2 or higher.
+The implementation must be at version 2 or higher. The implementation can be upgraded from the Interfaces section and the UPGRADE button in the toolbar area. If no button is visible it means you are already using the latest version.
 
 ## Overview
 An adapter is a javascript object that is mapped to a specific type of Contact Method. It can provide custom behaviour to a Contact Method inside a widget, e.g. posting a form to an external service.
@@ -16,7 +16,7 @@ Specify a `Client name` under Adapter settings, e.g. "my-adapter". Then click Sa
 
 ![](images/adapter-settings.png)
 
-**IMPORTANT:** Make sure to make the Contact Method available on your widget. For more information, read the FAQ inside Humany admin.
+**IMPORTANT:** Make sure to make the Contact Method added to your widget. For more information, read the FAQ inside Humany admin.
 
 ## Create the adapter
 Create a plain javascript object with the property `map` set to the client name you specified inside the Contact Method and an `execute()` function, as shown below. The `execute()` function will be invoked when the associated Contact Method is executed inside the widget. 
@@ -35,7 +35,7 @@ var MyAdapter = {
 
 `context` contains references to the current `WidgetData` and its `container`.
 
-`next` is a function which references the parent adapter, if available.
+`next` is a function which references the parent adapter, if available. This is invoked to chain multiple adapters and delegate to default functionality.
 
 #### ExecuteResult (object or Promise)
 An object describing the outcome of the action.
