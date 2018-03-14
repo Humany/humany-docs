@@ -1,5 +1,5 @@
 # Setting up SEO support for widgets
-This tutorial describes, in three steps, how to implement full SEO support for your Humany widget. The full SEO support is currently only available for Inline widgets.
+This tutorial describes, in a few simple steps, how to implement full SEO support for your Humany widget. The full SEO support is currently only available for Inline widgets.
 
 ### 1. Decide a location and define routes for your inline widget
 Decide where on your website you want the widget to be rendered. All requests, including requests for sub-routes, should be directed to a single view that is responsible for rendering the SEO-content and activate the widget.
