@@ -19,25 +19,33 @@ Specify a `Client name` under Adapter settings, e.g. "my-adapter". Then click Sa
 **IMPORTANT:** Make sure to make the Contact Method added to your widget. For more information, read the FAQ inside Humany admin.
 
 ## Create the adapter
-Create a plain javascript object with the property `map` set to the client name you specified inside the Contact Method and an `execute()` function, as shown below. The `execute()` function will be invoked when the associated Contact Method is executed inside the widget. 
+Create a plain javascript object with the property `map` set to the client name you specified inside the Contact Method. This will delegate the handling for your contact method to this adapter client. Inside the adapter you can then override the default behaviour as shown further down. 
+
 ```javascript
 var MyAdapter = {
   map: 'my-adapter',
-  execute: function(data, context) {
-    console.log('The adapter is executed with the following data:', data);
-    return { success: true };
-  }
+  // ...
 };
 ```
 
-### execute(data, context, next): ExecuteResult
+### `execute(data, context, next): ExecuteResult`
+Is triggered when the contact method is executed.
+```javascript
+var MyAdapter = {
+  // ...
+  execute: function(data, context) {
+    console.log('The adapter is executed with the following data:', data);
+    return { success: true };
+  },
+};
+```
 `data` contains data for the current action. Here you can access information about the Contact Method and any posted form data. Use can use this to pass form data to an external service.
 
 `context` contains references to the current `WidgetData` and its `container`.
 
 `next` is a function which references the parent adapter, if available. This is invoked to chain multiple adapters and delegate to default functionality.
 
-#### ExecuteResult (object or Promise)
+#### `ExecuteResult` (object or Promise)
 An object describing the outcome of the action.
 
 `success` (boolean) indicating whether the action has succeeded.
@@ -48,6 +56,35 @@ An object describing the outcome of the action.
 
 `suppressConfirmation` (boolean) indicating whether the confirmation text should be supressed.
 
+### `createModel(data, context, next): ContactMethodModel`
+Is triggered when the model is being created. Below example uses the `next()` delegate to fetch the default model and changes the `Text` property to a custom string.
+```javascript
+var MyAdapter = {
+  // ...
+  createModel: function(data, context, next) {
+    return next().then(function(model) {
+      model.Text = 'custom text to be displayed';
+      return model;
+    });
+  },
+};
+```
+`data` contains data for the current action. Here you can access information about the Contact Method and any posted form data. Use can use this to pass form data to an external service.
+
+`context` contains references to the current `WidgetData` and its `container`.
+
+`next` is a function which references the parent adapter, if available. This is invoked to chain multiple adapters and delegate to default functionality.
+
+#### `ContactMethodModel` (object)
+An object describing the model for the contact method.
+
+`Description` (string) description text to be displayed.
+
+`ExecuteImmediately` (boolean) whether the contact method should execute immediately when activated.
+
+`CanExecute` (boolean) whether the contact method can be executed.
+
+`Disabled` (boolean) whether the contact method is disabled or not.
 
 ## Register the adapter
 To make the adapter available it must be registered through the configuration API. Execute the following code _after_ the Humany embed script:
