@@ -20,16 +20,16 @@ humany.scan();
 // make a partial scan
 humany.scan(document.getElementById('some-container'));
 ```
-The `scan()` function will return a `Promise` containing an array of all newly detected widgets.
+The `scan()` function returns a `Promise` containing an array of newly activated widgets.
 
 ## Widget API
-Sometimes the "trigger link" approach is not enough and you need more detailed control over the activation, e.g. when inside a SPA. This is how you activate the widget using the API.
+Sometimes the "trigger link" approach is not enough and you need more detailed control over the activation, e.g. when inside a SPA or a WebView inside a mobile app. This is how you activate the widget using the API.
 
 ### Find widget by name
 You can access a widget from the global `humany` object or from the implementation object. Either way, first ensure the runtime is fully loaded [as decribed here](accessing-the-api.md), then execute one of the following lines:
 ```javascript
 // implementation object (recommended)
-const widget = implementation.widgets.find('widget-name');
+const widget = implementation.widgets.get('widget-name');
 
 // global object
 const widget = humany.widgets.find('widget-name');
