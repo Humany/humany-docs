@@ -50,8 +50,8 @@ Once the widget is activated you can invoke commands on it. Available commands a
 widget.invoke('command', args...);
 ```
 
-### Destroy
-In a SPA environment you may also need to destroy the widget manually, e.g. during page transitions:
+### Deactivate widget
+In a SPA environment you may also need to deactivate the widget manually, e.g. during page transitions:
 ```javascript
 widget.deactivate();
 ```
