@@ -13,12 +13,14 @@ Below is the format of a trigger link. Refer to the Humany portal for a unique t
 ### Lazy-loaded trigger links
 In case you lazy-load trigger links the bootstrapper may not be able to detect them. This may be an issue if the markup is modified by external scripts after the DOM content has loaded. In this case you will need to instruct the bootstrapper to re-scan the document in order to find and activate trigger links.
 
+Access the implementation [as decribed here](accessing-the-api.md), then execute one of the following lines:
+
 ```javascript
 // scan entire document
-humany.scan();
+implementation.scan();
 
 // make a partial scan
-humany.scan(document.getElementById('some-container'));
+implementation.scan(document.getElementById('some-container'));
 ```
 The `scan()` function returns a `Promise` containing an array of newly activated widgets.
 
@@ -31,7 +33,7 @@ You can access a widget from the global `humany` object or from the implementati
 // implementation object (recommended)
 const widget = implementation.widgets.get('widget-name');
 
-// global object
+// global object (in multi-tenant setup widget names may not be unique)
 const widget = humany.widgets.find('widget-name');
 ```
 

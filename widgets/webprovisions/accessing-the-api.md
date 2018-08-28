@@ -1,14 +1,12 @@
 # Accessing the API
-To enable the API you need to activate Webprovisions for your implementation. Right-click on your implementation and select "Edit". Expand the "Platform" section and select "Webprovisions".
+To enable the Widget API you need to activate version 4 on your implementation. Right-click on your implementation and select "Edit". Expand the "Versions" section and select "4 (beta)".
 
 ## In code
-Install Humany by embedding the installation code from the Humany portal. This will make a global `humany` object available. However, the full API will be loaded asynchronously, and if you access the `humany` object immediately after the installation code there is no guarantee the runtime is fully loaded.
-
-The following code will ensure the runtime is fully loaded for the `'default'` implementation. Change the implementation name depending on your setup.
+Install Humany by embedding the installation code from the Humany portal. This will make a global `humany` object available. However, the full API will be loaded asynchronously, and if you access the `humany` object immediately after the installation code there is no guarantee the implementation has fully loaded. To ensure the implementation has loaded, execute the following code:
 ```javascript
-humany.configure('default', (config) => 
+humany.configure((config) => 
   config.ready((implementation) => {
-    console.log('implementation is now ready', implementation);
+    console.log(`implementation '${implementation.name}' is now ready`, implementation);
   });
 );
 ```
