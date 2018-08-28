@@ -11,4 +11,14 @@ humany.configure((config) =>
 );
 ```
 
+### Multiple implementations
+The `config.ready()` hook will execute once for every implementation on the page. If you want to target a specific implementation in a multi-implementation setup you can pass a selector to the configurator. The following code will execute when the `'default'` implementation is loaded:
+
+```javascript
+humany.configure((config) => 
+  config('default').ready(() => 
+    console.log('default is ready'));
+);
+```
+
 **Next step:** [Activating a widget](activate-widget.md)
