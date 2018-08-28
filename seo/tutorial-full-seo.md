@@ -89,3 +89,6 @@ The final task is to activate the default javascript widget script. Simply inclu
 The Humany embed script will now identify the pre-compiled html and replace it with the default javascript widget, working and looking the same way as you are used to. Regular users will probably not see any difference, but we have now enabled the widget to be indexed by Google and other search engines.
 
 In addition, since the different views in the widget is now represented by a real physical page, we can take advantage of `pushState`, which is available in all modern browsers. This gives the advantage of friendly urls during widget operations which also conform to a SEO page. This is done automatically by the bootstrapper and no additional configuration is required. The widget routing will use the `basePath` you specified in your request to the Humany SEO service, and construct all widget links on top of that.
+
+## Meta data
+To be able to render a proper title and description for each page, the SEO Service provides response headers for `Page-Title` and `Page-Description`. Use them to construct the head part of your page.
