@@ -11,3 +11,7 @@ The following documents contain documentation for the new Humany Widget API. The
 ### Plugins
 * **Using plugins** - How to use plugins.
 * **Plugin authoring** - How to author a ship a custom plugin.
+
+### Code samples
+* **[Custom container element](samples/custom-container-element.md)** - how to use a custom container.
+* **[External trigger](samples/external-trigger.md)** - how to activate a widget based on external event.
