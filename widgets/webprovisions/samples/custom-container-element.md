@@ -16,17 +16,17 @@ const implementationName = 'default';
 const widgetName = 'my-floating';
 const containerElementId = 'widget-container';
 
-humany.configure((config) => 
+humany.configure((config) => {
   config.ready((implementation) => {
     if(implementation.name === implementationName) {
-      const myFloating = implementation.widgets.get(widgetName);
-      myFloating.activate({
+      const widget = implementation.widgets.get(widgetName);
+      widget.activate({
         widgetDOMElement: document.getElementById(containerElementId),
         renderTriggerElement: false,
       });
-      myFloating.invoke('start');
+      widget.invoke('start');
     }
   });
-);
+});
 ```
 _Note: Code above uses ES6 syntax, which not all browser versions support. Transpile to ES5 for legacy support._
