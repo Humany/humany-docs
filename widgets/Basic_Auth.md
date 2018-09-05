@@ -12,7 +12,7 @@ Humany.configure(function (config) {
 			context.container.get("serviceClient").proxy.interceptors.push({
 				request: function (request) {
 					request.options.headers = new Headers();
-					request.options.headers.append('Authorization', 'Basic' + btoa(USERNAME + ":" + PASSWORD));
+					request.options.headers.append('Authorization', 'Basic ' + btoa(USERNAME + ":" + PASSWORD));
 					return request;
 				}
 			});
