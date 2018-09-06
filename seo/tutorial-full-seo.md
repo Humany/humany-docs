@@ -65,6 +65,11 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
 }
 ```
 
+The response from humany also contains some headers that can be useful in order to improve SEO:
+* Page-Canonical-Url
+* Page-Description
+* Page-Title
+
 ### 3. Display the widget html in your view
 When the html is fetched from the Humany SEO service you are ready to complete the view. Just put the response html in the same place the widget should be displayed. In ASP.NET MVC with Razor it would look something like this:
 ```aspx
