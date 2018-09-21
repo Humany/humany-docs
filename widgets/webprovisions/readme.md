@@ -2,7 +2,9 @@
 The following documents contain documentation for the new Humany Widget API. The API is currently available for _Bot_ and _Floating_ widgets on the latest platform.
 
 ### General
-* **[Accessing the API](accessing-the-api.md)** - how to access the new client API programmatically.
+* **[Accessing the API](accessing-the-api.md)** - how to enable the Widget API and access it from code.
+* **Configuration** - how to apply custom configurations.
+* **[Selectors](selectors.md)** - how to select specific implementations and widgets.
 
 ### Widgets
 * **[Activating a widget](activate-widget.md)** - how to activate and deactivate widgets.
