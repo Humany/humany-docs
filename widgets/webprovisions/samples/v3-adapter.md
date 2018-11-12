@@ -36,24 +36,38 @@ execute: () => {
     // start it by invoking the 'start' command.
     return targetWidget.invoke('start');
   }).then(() => {
-    // the target widget has been started and rendered.
+    console.log('the target widget has been started and rendered.');
   });
 }
 ```
 **Note:** The above code uses the V4 widget API (`window.humany` with lower-case **H**) to get a reference to the target widget. For more information about the V4 widget API, [see the V4 documentation](https://github.com/Humany/humany-docs/tree/master/widgets/webprovisions).
 
 ## Routing
-When invoking the `start` command the widget will be started in its default location, which in most cases is the **index** route. In order to navigate to a specific route you can use the _RoutingService_, registered as `router` on the widget's container:
+
+### View-based widgets
+When invoking the `start` command the widget will be started in its default location, which in most cases is the **index** route. In order to navigate to a specific route you can use the `navigate` command, which uses the registered _RoutingService_ for the widget.
 ```js
 execute: () => {
   const targetWidget = window.humany.widgets.find('name-of-target-widget');
-  targetWidget.activate().then(() => {
-    return targetWidget.invoke('start');
-  }).then(() => {
-    return targetWidget.container.getAsync('router');
-  }).then((router) => {
-    router.navigate('contact');
-  });
+  targetWidget.activate()
+    .then(() => targetWidget.invoke('start'))
+    .then(() => targetWidget.invoke('navigate', 'contact'))
+    .then(() => {
+      console.log('the target widget has been started on the contact view.');
+    });
 }
 ```
-**Note:** The _RoutingService_ is only available in view-based widgets and is not available in conversational widgets such as Bot.
+**Note:** This command is only available in view-based widgets and is not available in conversational widgets such as Bot.
+
+### Conversational widgets
+You can pass in start-up arguments to a conversational widget to request a particular entity, e.g. a guide, to be displayed when the widget is started. 
+```js
+execute: () => {
+  const targetWidget = window.humany.widgets.find('name-of-target-widget');
+  targetWidget.activate()
+    .then(() => targetWidget.invoke('start', { guide: { id: 123 } }))
+    .then(() => {
+      console.log('the target widget has been started with the guide 123.');
+    });
+}
+```
