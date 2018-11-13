@@ -8,7 +8,7 @@ The **deactivated** state is the default state when a widget is created. At this
 widget.state; // 'deactivated'
 widget.container.get('$instance'); // undefined
 widget.container.get('$plugins'); // undefined
-widget.invoke('[command]'); // command is queued until activation
+widget.invoke('[command]'); // invalid operation - command is ignored
 ```
 From **deactivated** state the widget can transition to **activating** state.
 
