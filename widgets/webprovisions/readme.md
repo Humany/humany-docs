@@ -17,3 +17,4 @@ The following documents contain documentation for the new Humany Widget API. The
 ### Code samples
 * **[Custom container element](samples/custom-container-element.md)** - how to use a custom container.
 * **[External trigger](samples/external-trigger.md)** - how to activate a widget based on external event.
+* **[Activate from V3 custom adapter](samples/v3-adapter.md)** - how to activate a widget from a V3 contact method adapter.
