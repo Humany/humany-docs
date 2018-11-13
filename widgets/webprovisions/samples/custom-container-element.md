@@ -12,20 +12,17 @@ The next step is to activate the widget programmatically using the Widget API. I
 ```javascript
 // make sure the Humany installation script has executed before running this code
 
-const implementationName = 'default';
 const widgetName = 'my-floating';
 const containerElementId = 'widget-container';
+const selector = 'tenant:implementation';
 
 humany.configure((config) => {
-  config.ready((implementation) => {
-    if(implementation.name === implementationName) {
-      const widget = implementation.widgets.get(widgetName);
-      widget.activate({
-        widgetDOMElement: document.getElementById(containerElementId),
-        renderTriggerElement: false,
-      });
-      widget.invoke('start');
-    }
+  config(selector).ready((implementation) => {
+    const widget = implementation.widgets.get(widgetName);
+    widget.activate({
+      widgetDOMElement: document.getElementById(containerElementId),
+      renderTriggerElement: false,
+    }).then(() => widget.invoke('start'));
   });
 });
 ```
