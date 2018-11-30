@@ -39,7 +39,7 @@ Execute the following command:
 It will prompt you to select one widget from the specified implementation. The CLI will create a template project and bootstrap the selected widget. When the setup is completed a local web server will start displaying the widget.
 
 ### Creating a distribution bundle
-The setup uses Webpack to generate the distribution bundles. Use of of the following command to generate the bundle. It can be located in the `/dist` folder.
+The setup uses Webpack to generate the distribution bundles. Use one of the following commands to generate the bundle. The generated files are located in the `/dist` folder.
 
 **Production bundle**
 ```
