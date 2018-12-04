@@ -16,14 +16,12 @@ const widgetName = 'my-floating';
 const containerElementId = 'widget-container';
 const selector = 'tenant:implementation';
 
-humany.configure((config) => {
-  config(selector).ready((implementation) => {
-    const widget = implementation.widgets.get(widgetName);
-    widget.activate({
-      widgetDOMElement: document.getElementById(containerElementId),
-      renderTriggerElement: false,
-    }).then(() => widget.invoke('start'));
-  });
+humany.configure((config, implementation) => {
+  const widget = implementation.widgets.get(widgetName);
+  widget.activate({
+    widgetDOMElement: document.getElementById(containerElementId),
+    renderTriggerElement: false,
+  }).then(() => widget.invoke('start'));
 });
 ```
 _Note: Code above uses ES6 syntax, which not all browser versions support. Transpile to ES5 for legacy support._
