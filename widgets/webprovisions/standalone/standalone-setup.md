@@ -4,7 +4,7 @@ This tutorial will you guide you on how to setup a standalone widget installatio
 ## Prerequisities
 This tutorial will assume you have a valid enterprise account of Humany with at least one public widget based on a V4 implementation. Also make sure you have [NodeJS](https://nodejs.org) and [NPM](https://www.npmjs.com/get-npm) installed on your computer.
 
-## Installating the CLI
+## Installing the CLI
 Open a command prompt and run the following command to install the Humany CLI globally:
 ```
 > npm install @humany/cli -g
