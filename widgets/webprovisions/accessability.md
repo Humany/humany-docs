@@ -1,9 +1,9 @@
 # Accessability
-All Humany widgets using Webprovisions can be configured to improve the accessability.
+All Humany widgets from V4 can be configured to improve the accessability.
 To configure the accessability settings of your widgets, use the accessability configuration API.
 
-## In Widget Configuration
-Currently there are two options that can be configured. In order to use the accessability configuration API, you need to add it to your configuration API extensions as described below:
+## Standalone setup
+In order to use the accessability configuration API in a standalone setup, you need to add it to your configuration API extensions as described below:
 
 ```javascript
 import { accessabilityConfigurationApi } from '@humany/utils';
