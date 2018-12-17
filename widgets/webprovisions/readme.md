@@ -10,6 +10,7 @@ The following documents contain documentation for the new Humany Widget API. The
 * **[Life cycle](widget-life-cycle.md)** - overview of the widget life cycle.
 * **[Activating a widget](activate-widget.md)** - how to activate and deactivate widgets.
 * **[Standalone setup](standalone/standalone-setup.md)** - How to set up widgets standalone (for self-hosting).
+* **[Accessability](accessability.md)** - How to improve the accessability of the widgets.
 
 ### Plugins
 * **Using plugins** - How to use plugins.
