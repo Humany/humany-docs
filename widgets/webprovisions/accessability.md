@@ -1,18 +1,18 @@
-# Accessability
-All Humany widgets from V4 can be configured to improve the accessability.
-To configure the accessability settings of your widgets, use the accessability configuration API.
+# Accessibility
+All Humany widgets from V4 can be configured to improve the accessibility.
+To configure the accessibility settings of your widgets, use the accessibility configuration API.
 
 ## Standalone setup
-In order to use the accessability configuration API in a standalone setup, you need to add it to your configuration API extensions as described below:
+In order to use the accessibility configuration API in a standalone setup, you need to add it to your configuration API extensions as described below:
 
 ```javascript
-import { accessabilityConfigurationApi } from '@humany/utils';
+import { accessibilityConfigurationApi } from '@humany/utils';
 
 const humany = window.humany = Humany.createFromGlobal(
   window.humany, 
   { 
     configurationApiExtensions: [
-      accessabilityConfigurationApi,
+      accessibilityConfigurationApi,
     ],
   }
 );
@@ -23,16 +23,16 @@ This option makes the widget "bound". When tabbing through the widget's elements
 This means that the focus will not leave the widget when using the tab key.
 
 ```javascript
-config.accessability({
+config.accessibility({
   boundFocus: true, // defaults to false
 });
 ```
 
 ### Highlight Focus
-This option makes it easier to determine which element has focus, by giving it a glow / yellow background.
+This option makes it easier to determine which element has focus, by giving it a dotted outline.
 
 ```javascript
-config.accessability({
+config.accessibility({
   highlightFocus: true, // defaults to false
 });
 ```
