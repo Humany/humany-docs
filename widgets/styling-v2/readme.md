@@ -1,4 +1,4 @@
-# Documentation on how to customize Humany widgets with CSS in V2+
+# Documentation on how to customize Humany widgets with CSS in V2 & V3
 
 ## Inline & Lightbox 
 - [Big categories in iconic theme](inline/big-category-tree.md)
