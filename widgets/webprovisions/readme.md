@@ -1,5 +1,5 @@
 # Humany Widget API overview
-The following documents contain documentation for the new Humany Widget API. The API is currently available for _Bot_ and _Floating_ widgets on the latest platform.
+The following documents contain documentation for the new Humany Widget API. The API is currently available for _Bot_, _Floating_ and _Inline_ widgets on the latest platform.
 
 ### General
 * **[Accessing the API](accessing-the-api.md)** - how to enable the Widget API and access it from code.
