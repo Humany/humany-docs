@@ -1,3 +1,5 @@
+> NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/vnext). For [more information about widget versions check here](versions.md).
+
 # Humany Technical Documentation
 
 Technical documentation on humany API, widgets and integration options
@@ -23,6 +25,8 @@ The following picture describes the relation between API options in the bot conv
 
 # Widget APIs
 
+## CSS
+
 ## Speialized Plugin APIs
 
 ### Tracking
@@ -45,14 +49,9 @@ The following picture describes the relation between API options in the bot conv
 
 # REST APIs
 
-API requests are typically requests GET/POST requests through a "projection" path (a.k.a. widget-name), 
-  e.g. https://**:application-name**.humany.net/**:widget-name**/guides.
+Humany widgets communicate with the backend service through a REST API. This section is directed at developers who aim at integrating with this API without using our widget APIs.
 
-A projection is the name of a widget that defines which categories, languages etc. that are returned.
-
-## Conversation API
-
-The conversational API is not currently supported and is subject to change.
+[Read more and implementation details](REST/README.md)
 
 ## Matching API
 
@@ -66,6 +65,16 @@ List notices, news and alerts.
 
 List and navigate to contact methods and post form data.
 
+## Conversation API
+
+This API is subject to change and supported.
+
+## Knowledge Base API
+
+This API is subject to change and supported.
+
 ### Webhook
 
-Pass information posted to the **Web Service* contact method to an external web hook and display the response to the user in the web widget.
+Pass information posted to the **Web Service** contact method to an external web hook and display the response to the user in the web widget.
+
+# SEO
