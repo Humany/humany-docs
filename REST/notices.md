@@ -1,19 +1,24 @@
+> This documentation is valid for widget V1-V4
+
 # Notices API
 This feature requires an application with a widget which has defined notice categories.
 
 ## Request
-  GET https://**:application-name**.humany.net/**:widget-name**/notices/**:page-name-or-notice-id**
 
-### :application-name
-The name of your application.
+```
+GET https://:application-name.humany.net/:widget-name/notices/:page-name-or-notice-id
+```
 
-### :widget-name
-The name of the widget which has been configured to provide notices.
+| Segment                | Pattern           | Information     |
+|------------------------|-------------------|-----------------|
+| Application domain     | ```https://:subdomain.humany.net``` | This identifies your Knowledge-Base |
+| Projection             | ```/:projection```                  | The name of the widget which has been configured to provide notices. |
+| API                    | ```/notices```                      | The notices API |
+| Page name or notice Id | ```/:page-name-or-notice-id```      | If an id (integral value) is specified, the corresponding notice ("single-item") will be returned. |
 
-### :page-name-or-notice-id (optional)
-If an id (integral value) is specified, the corresponding notice ("single-item") will be returned.
+### Special case regarding notice translations
 
-**Special case regarding notice translations:** Given that the security settings of the current widget doesn't require authentication, and that the current notice is accessible on the current widget, you may also use this route to access the notices translations. The translations of a notice, if any, can be found on the "Translations" property.
+Given that the security settings of the current widget doesn't require authentication, and that the current notice is accessible on the current widget, you may also use this route to access the notices translations. The translations of a notice, if any, can be found on the "Translations" property.
 
 If the name of a page/tab is specified, returns the page along with the configured notices. (To find the name of a page open the widget and look at the URL when navigating to the page, e.g. for http://www.yoursite.se/help#humany-help=/**text1** then text1 would be the page name)
 
@@ -23,7 +28,7 @@ If the parameter is omitted, notices for the FAQ page will be returned.
 To pass custom parameters add a query string with the name of that paramter prefixed with "p.", e.g. ?p.customertype=value
 
 ## Response (single item)
-```
+```javascript
 {
     "Body":"<p>html</p>\n",
     "Attributes":{},
@@ -46,7 +51,7 @@ To pass custom parameters add a query string with the name of that paramter pref
 ```
 
 ## Response (page)
-```
+```javascript
 {
     // Notices are small notifications displayed in specific areas of the interface (top, middle, bottom)
     "Notices":[
@@ -100,7 +105,7 @@ To pass custom parameters add a query string with the name of that paramter pref
 ```
 
 ## Example (page)
-```
+```javascript
 // REQUEST
 
 var applicationName = "help";

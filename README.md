@@ -1,4 +1,4 @@
-> NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/vnext). For [more information about widget versions check here](versions.md).
+> NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/vnext). For [more information about widget versions check here](https://github.com/Humany/humany-docs/widgets/versions.md).
 
 # Humany Technical Documentation
 

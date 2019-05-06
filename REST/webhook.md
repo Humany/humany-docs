@@ -1,6 +1,8 @@
-# Using the Customized Web Service contact method
+> This documentation is valid for widget V1-V4
 
-Developers are the intended audience of this documentation.
+# Contact Method WebHook
+
+This described how to use the Customized Web Service contact method to pass information from a form to a system external to Humany and display information from this service to users using Humany widgets. Developers are the intended audience of this documentation.
 
 ## Background
 
@@ -25,7 +27,7 @@ Humany will transfer the current state and context of the end user request to th
 
 ## Example application/json
 
-```
+```javascript
 {
 	Context:
 	{
@@ -43,7 +45,7 @@ Humany will transfer the current state and context of the end user request to th
 
 ## Example application/xml
 
-```
+```xml
 <context>
 	<parameters>
 	<parameter name="FirstName">Mikael</parameter>
@@ -58,8 +60,10 @@ Humany will transfer the current state and context of the end user request to th
 
 ## Example x-www-form-urlencoded
 
+```
 FirstName=Mikael&LastName=Robinson&ProblemDescription=Lorem+ipsum+dolor+sit+amet&UserId=1992883-37746GX-F00&
 Site=http%3a%2f%2fdemobolaget.humany.net%2ftest-interface%23humany-test-interface%3d%2fcontact%2f1362&Perspective=Default
+```
 
 ## Troubleshooting
 
