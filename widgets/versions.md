@@ -10,11 +10,11 @@ Please upgrade to V3 or V4.
 
 Please upgrade to V3 or V4.
 
-[Documentation](https://github.com/Humany/humany-docs/tree/vnext).
-
 ## V3
 
 Upgrade to V4 unless you are affected by any of V4:s limitation
+
+[Documentation](https://github.com/Humany/humany-docs/tree/v3).
 
 ## V4
 
