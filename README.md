@@ -1,4 +1,4 @@
-> NOTE: This is widgets **V4** documentation. [Widgets **V3** documentation](https://github.com/Humany/humany-docs/tree/v3). [Information about widget versions](https://github.com/Humany/humany-docs/widgets/versions.md).
+> NOTE: This is widgets **V4** documentation. [Widgets **V3** documentation](https://github.com/Humany/humany-docs/tree/v3). [Information about widget versions](widgets/versions.md).
 
 # Humany Technical Documentation
 
