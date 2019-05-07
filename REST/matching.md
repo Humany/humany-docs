@@ -52,3 +52,6 @@ Example (get guide by id):
 ```
 POST https://support.humany.net/api-exempel/guides/697?client=453430cb-ad3e-4186-846a-7de22e4a525d&phrase=hello
 ```
+
+[Try online](https://codesandbox.io/s/moyr2x8wwp)
+
