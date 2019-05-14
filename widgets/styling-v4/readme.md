@@ -15,7 +15,6 @@ Class | Description
 
 ## Widget types
 
----
 
 ## Inline
 ### Main layout
@@ -37,7 +36,6 @@ Class | Description
 
     ![](inline-footer.png)
 
----
 
 ## Floating
 ### Main layout
@@ -61,7 +59,6 @@ Class | Description
 
 ### Components
 
----
 
 ## Bot
 ### Main layout
