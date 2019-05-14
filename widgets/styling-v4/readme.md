@@ -26,27 +26,6 @@ All of our classes are prefixed with `'humany-'` to make it easier to scope our 
 
 ## Widget types
 
-### Floating
-#### Main layout
-
-- **Header** - `humany-header`
-
-    Contains the avatar, heading, tagline, back button, search toggle button and close button in mobile view.
-
-    ![](floating-header.png)
-
-- **Content** - `humany-content`
-
-    Contains top and middle row notices grouped together, categories, search field, guide list, guides, contact methods, list notices, free text notices and foot notices.
-
-    ![](floating-content.png)
-
-- **Footer** - `humany-footer`
-
-    Positioned absolutely at the bottom on top of the main content, contains the copyright and the button to navigate to the contact view.
-
-    ![](floating-footer.png)
- 
 ### Inline
 
 - **Header** - `humany-header`
@@ -66,6 +45,28 @@ All of our classes are prefixed with `'humany-'` to make it easier to scope our 
     Contains the copyright.
 
     ![](inline-footer.png)
+
+### Floating
+#### Main layout
+
+- **Header** - `humany-header`
+
+    Contains the avatar, heading, tagline, back button, search toggle button and close button in mobile view.
+
+    ![](floating-header.png)
+
+- **Content** - `humany-content`
+
+    Contains the top and middle row notices grouped together, categories, search field, guide list, guides, contact methods, list notices, free text notices and foot notices.
+
+    ![](floating-content.png)
+
+- **Footer** - `humany-footer`
+
+    Positioned absolutely at the bottom on top of the main content, contains the copyright and the button to navigate to the contact view.
+
+    ![](floating-footer.png)
+
 
 ### Bot
 
