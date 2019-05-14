@@ -101,3 +101,13 @@ Class | Description
   
     ![](bot-content.png)
 ### Components
+
+
+
+
+
+# **TO-DO:**
+- Document usage of data-attributes
+- Components for all widget types
+- Interactive classes `humany-phrase-present`, `humany-category-{{current route}}` etc..
+
