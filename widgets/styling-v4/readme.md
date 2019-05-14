@@ -4,30 +4,21 @@
 ## Commonly used classes
 All of our classes are prefixed with `'humany-'` to make it easier to scope our CSS.
 
-- `humany-link` 
+Class | Description
+------|------------
+`humany-link`|Base-class used for every link. Not used for links in guide content.
+`humany-paragraph`|Container for a `h2` title and a `div` containing any passed html. e.g. used for rendering guides.
+`humany-list`|Base-class used for every list. Not used for lists in guide content.
+`humany-item-list`|Contains a `humany-paragraph` and a `humany-list`.
+`humany-html`|Contains any content of html, e.g. guide bodies.
 
-  Base-class used for every link. Not used for links in guide content.
-
-- `humany-paragraph`
-  
-  Container for a `h2` title and a `div` containing any passed html. e.g. used for rendering guides.
-
-- `humany-list`
-
-  Base-class used for every list. Not used for lists in guide content.
-
-- `humany-item-list`
-
-  Contains a `humany-paragraph` and a `humany-list`.
-
-- `humany-html`
-
-  Contains any content of html, e.g. guide bodies.
 
 ## Widget types
 
-### Inline
+---
 
+## Inline
+### Main layout
 - **Header** - `humany-header`
 
     Contains the navigation links to each of the widget tabs, top row notices, search field and middle row notices.
@@ -46,9 +37,10 @@ All of our classes are prefixed with `'humany-'` to make it easier to scope our 
 
     ![](inline-footer.png)
 
-### Floating
-#### Main layout
+---
 
+## Floating
+### Main layout
 - **Header** - `humany-header`
 
     Contains the avatar, heading, tagline, back button, search toggle button and close button in mobile view.
@@ -67,13 +59,21 @@ All of our classes are prefixed with `'humany-'` to make it easier to scope our 
 
     ![](floating-footer.png)
 
+### Components
 
-### Bot
+---
 
-- **Header** - `humany-content`
+## Bot
+### Main layout
+- **Header** - `humany-header`
+
+    Contains the avatar, heading, tagline and close button in mobile view.
   
     ![](bot-header.png)
 
-- **Content** - `humany-footer`
+- **Content** - `humany-content`
+
+    Contains the conversation with bot and user messages and the message box with a help button.
   
     ![](bot-content.png)
+### Components
