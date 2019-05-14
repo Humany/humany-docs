@@ -17,7 +17,8 @@ Class | Description
 
 
 ## Inline
-### Main layout
+<h3 id="inline-main-layout">Main layout</h3>
+
 - **Header** - `humany-header`
 
     Contains the navigation links to each of the widget tabs, top row notices, search field and middle row notices.
