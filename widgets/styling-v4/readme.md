@@ -15,9 +15,8 @@ Class | Description
 
 ## Widget types
 
-
 ## Inline
-<h3 id="inline-main-layout">Main layout</h3>
+### Main layout
 
 - **Header** - `humany-header`
 
@@ -36,6 +35,34 @@ Class | Description
     Contains the copyright.
 
     ![](inline-footer.png)
+
+### Components
+
+- **Guide list** - `humany-guide-list`
+
+    Contains the guide list, uses `humany-item-list`, and a loader which is shown when fetching guides.
+
+    ![](inline-guide-list.png)
+- **Category list** - `humany-category-list-wrapper`
+
+    Contains the full category tree, uses `humany-item-list`, and a loader which is shown when fetching categories. Is rendered and behave differently depending on the chosen theme.
+
+    - **Standard theme**
+    
+      Displayed statically on the right hand side.
+
+      ![](inline-category-list-standard.png)
+
+      
+    - **Iconic theme**
+    
+      Displayed above the guide list when no category is chosen then moves to the right of the guide list once a category is chosen.
+
+      **No category chosen:**
+      ![](inline-category-list-iconic.png)
+      
+      **Category chosen:**
+      ![](inline-category-list-iconic-category-chosen.png)
 
 
 ## Floating
@@ -59,7 +86,6 @@ Class | Description
     ![](floating-footer.png)
 
 ### Components
-
 
 ## Bot
 ### Main layout
