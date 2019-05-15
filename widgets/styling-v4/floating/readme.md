@@ -66,7 +66,7 @@
     ![](images/floating-categorized-notice-list.png)
 
     - **List notice:** - `humany-list-notice`
-    
+
     ![](images/floating-list-notice.png)
 
     - **Expanded list notice:** - `humany-list-notice, humany-expanded`
@@ -76,3 +76,14 @@
     - **Free text notice:** - `humany-free-text-notice`
 
     ![](images/floating-free-text-notice.png)
+
+- **Foot notices** - `humany-bottom-notice-list`
+
+    Contains a list of all the foot notices.
+
+    ![](images/floating-foot-notices.png)
+
+- **Contact method selector** - `humany-contact-list`
+
+    Levels of contact method categories. If selected category has sub categories, those categories will be displayed in another level.
+    If not, the contact methods within the selected category will be displayed in a contact method list.

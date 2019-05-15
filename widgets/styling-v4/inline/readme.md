@@ -134,7 +134,7 @@
 - **Contact method selector** - `humany-contact-selector`
 
     Levels of contact method categories. If selected category has sub categories, those categories will be displayed in another level.
-    If not the contact methods within the selected category will be display in a contact method list.
+    If not, the contact methods within the selected category will be displayed in a contact method list.
 
     *Looks differently depending on the chosen theme.*
 
