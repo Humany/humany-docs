@@ -33,22 +33,26 @@
     Displays a single closeable notice at a time with paging.
 
     - **Top:**
-    ![](images/inline-top-row-notices.png)
+
+        ![](images/inline-top-row-notices.png)
 
     - **Middle:**
-    ![](images/inline-middle-row-notices.png)
+
+        ![](images/inline-middle-row-notices.png)
 
 - **Search** - `humany-search`
     
-    A `div` with a search `input`. 
+    A wrapper for the search field.
     
     *Looks differently depending on the chosen theme.*
 
     - **Standard theme:**
-    ![](images/inline-search-standard.png)
+
+        ![](images/inline-search-standard.png)
 
     - **Iconic theme:**
-    ![](images/inline-search-iconic.png)
+
+        ![](images/inline-search-iconic.png)
 
 - **Breadcrumb** - `humany-breadcrumb-list`
 
@@ -75,11 +79,13 @@
     
       Displayed above the guide list when no category is chosen then moves to the right of the guide list once a category is chosen.
 
-      **No category chosen:**
-      ![](images/inline-category-list-iconic.png)
+      - **No category chosen:**
 
-      **Category chosen:**
-      ![](images/inline-category-list-iconic-category-chosen.png)
+         ![](images/inline-category-list-iconic.png)
+
+      - **Category chosen:**
+      
+        ![](images/inline-category-list-iconic-category-chosen.png)
 
 - **Guide list** - `humany-guide-list`
 
@@ -91,14 +97,19 @@
 
     Contains both list and free text notices separated by category.
 
-    - **List notice:**
-    ![](images/inline-list-notice.png)
+    ![](images/inline-categorized-notice-list.png)
 
-    - **Expanded list notice:**
-    ![](images/inline-list-notice-expanded.png)
+    - **List notice:** - `humany-list-notice`
+
+        ![](images/inline-list-notice.png)
+
+    - **Expanded list notice:** - `humany-list-notice, humany-expanded`
+
+        ![](images/inline-list-notice-expanded.png)
     
-    - **Free text notice:**
-    ![](images/inline-free-text-notice.png)
+    - **Free text notice:** - `humany-free-text-notice`
+
+        ![](images/inline-free-text-notice.png)
 
 - **Foot notices** - `humany-bottom-notice-list`
 
@@ -127,22 +138,26 @@
 
     - **Standard theme**
 
-        **First level, no category chosen**
-        ![](images/inline-contact-selector-standard.png)
+        - **First level, no category chosen**
 
-        **Second level, category chosen, contact methods displayed**
-        ![](images/inline-contact-selector-second-level-standard.png)
-        ![](images/inline-contact-selector-contact-methods-standard.png)
+            ![](images/inline-contact-selector-standard.png)
+
+        - **Second level, category chosen, contact methods displayed**
+
+            ![](images/inline-contact-selector-second-level-standard.png)
+            ![](images/inline-contact-selector-contact-methods-standard.png)
 
 
     - **Iconic theme**
 
-        **First level, no category chosen**
-        ![](images/inline-contact-selector-iconic.png)
+        - **First level, no category chosen**
 
-        **Second level, category chosen, contact methods displayed**
-        ![](images/inline-contact-selector-second-level-iconic.png)
-        ![](images/inline-contact-selector-contact-methods-iconic.png)
+            ![](images/inline-contact-selector-iconic.png)
+
+        - **Second level, category chosen, contact methods displayed**
+
+            ![](images/inline-contact-selector-second-level-iconic.png)
+            ![](images/inline-contact-selector-contact-methods-iconic.png)
 
 - **Contact method list** - `humany-contact-list`
 
