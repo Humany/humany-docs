@@ -124,9 +124,11 @@
     ![](images/inline-guide.png)
 
     - **Feedback list** - `humany-feedback-list`
+
     ![](images/inline-feedback-list.png)
 
     - **Dialog list** - `humany-dialog-list`
+    
     ![](images/inline-dialog-list.png)
 
 - **Contact method selector** - `humany-contact-selector`
