@@ -14,9 +14,9 @@ Class | Description
 
 
 ## Widget types
-- ### [Inline](inline)
-- ### [Floating](floating)
-- ### [Bot](bot)
+- [Inline](inline)
+- [Floating](floating)
+- [Bot](bot)
 
 
 ## TO-DO:
