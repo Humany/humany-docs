@@ -2,7 +2,7 @@
 *This documentation is intended for widgets in v4 implementations.*
 
 ## Commonly used classes
-All of our classes are prefixed with `'humany-'` to make it easier to scope our CSS.
+All of our classes are prefixed with `humany-` to make it easier to scope our CSS.
 
 Class | Description
 ------|------------
