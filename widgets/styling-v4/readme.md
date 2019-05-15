@@ -8,7 +8,7 @@ Class | Description
 ------|------------
 `humany-link`|Base-class used for every link. Not used for links in guide content.
 `humany-paragraph`|Container for a `h2` title and a `div` containing any passed html. e.g. used for rendering guides.
-`humany-list`|Base-class used for every list. Not used for lists in guide content.
+`humany-list`|Base-class used for every list, except lists in guide content.
 `humany-item-list`|Contains a `humany-paragraph` and a `humany-list`.
 `humany-html`|Contains any content of html, e.g. guide bodies.
 
