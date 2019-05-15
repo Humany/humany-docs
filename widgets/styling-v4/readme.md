@@ -38,11 +38,34 @@ Class | Description
 
 ### Components
 
-- **Guide list** - `humany-guide-list`
+- **Top and middle row notices** - `humany-top-notice, humany-middle-notice`
+    
+    Displays a single closeable notice at a time with paging.
 
-    Contains the guide list, uses `humany-item-list`, and a loader which is shown when fetching guides.
+    - **Top:**
+    ![](inline-top-row-notices.png)
 
-    ![](inline-guide-list.png)
+    - **Middle:**
+    ![](inline-middle-row-notices.png)
+
+- **Search** - `humany-search`
+    
+    A `div` with a search `input`. Displays slightly differently depending on the chosen theme.
+
+    - **Standard theme:**
+    ![](inline-search-standard.png)
+
+    - **Iconic theme:**
+    ![](inline-search-iconic.png)
+
+- **Breadcrumb** - `humany-breadcrumb-list`
+
+    When some kind of navigation is present, when searching, when selecting a category etc. A breadcrumb is shown with each navigation step.
+    
+    *Currently only available for the iconic theme*
+
+    ![](inline-breadcrumb.png)
+
 - **Category list** - `humany-category-list-wrapper`
 
     Contains the full category tree, uses `humany-item-list`, and a loader which is shown when fetching categories. Is rendered and behave differently depending on the chosen theme.
@@ -60,10 +83,34 @@ Class | Description
 
       **No category chosen:**
       ![](inline-category-list-iconic.png)
-      
+
       **Category chosen:**
       ![](inline-category-list-iconic-category-chosen.png)
 
+- **Guide list** - `humany-guide-list`
+
+    Contains the guide list, uses `humany-item-list`, and a loader which is shown when fetching guides.
+
+    ![](inline-guide-list.png)
+
+- **List and free text notices** - `humany-categorized-notice-list`
+
+    Contains both list and free text notices separated by category.
+
+    - **List notice:**
+    ![](inline-list-notice.png)
+
+    - **Expanded list notice:**
+    ![](inline-list-notice-expanded.png)
+    
+    - **Free text notice:**
+    ![](inline-free-text-notice.png)
+
+- **Foot notices** - `humany-bottom-notice-list`
+
+    Contains a list of all the foot notices.
+
+    ![](inline-foot-notices.png)
 
 ## Floating
 ### Main layout
