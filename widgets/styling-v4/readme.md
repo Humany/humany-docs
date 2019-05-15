@@ -38,6 +38,12 @@ Class | Description
 
 ### Components
 
+- **Tabs** - `humany-tabs`
+
+    A row with links to each tab.
+
+    ![](inline-tabs.png)
+
 - **Top and middle row notices** - `humany-top-notice, humany-middle-notice`
     
     Displays a single closeable notice at a time with paging.
@@ -50,7 +56,9 @@ Class | Description
 
 - **Search** - `humany-search`
     
-    A `div` with a search `input`. Displays slightly differently depending on the chosen theme.
+    A `div` with a search `input`. 
+    
+    *Looks differently depending on the chosen theme.*
 
     - **Standard theme:**
     ![](inline-search-standard.png)
@@ -68,7 +76,9 @@ Class | Description
 
 - **Category list** - `humany-category-list-wrapper`
 
-    Contains the full category tree, uses `humany-item-list`, and a loader which is shown when fetching categories. Is rendered and behave differently depending on the chosen theme.
+    Contains the full category tree, uses `humany-item-list`, and a loader which is shown when fetching categories. 
+    
+    *Looks and behaves differently depending on the chosen theme.*
 
     - **Standard theme**
     
@@ -112,6 +122,51 @@ Class | Description
 
     ![](inline-foot-notices.png)
 
+- **Guide** - `humany-guide`
+
+    An opened guide. Can contain contact method, dialog and feedback lists.
+
+    ![](inline-guide.png)
+
+    - **Feedback list** - `humany-feedback-list`
+    ![](inline-feedback-list.png)
+
+    - **Dialog list** - `humany-dialog-list`
+    ![](inline-dialog-list.png)
+
+- **Contact method selector** - `humany-contact-selector`
+
+    Levels of contact method categories. If selected category has sub categories, those categories will be displayed in another level.
+    If not the contact methods within the selected category will be display in a contact method list.
+
+    *Looks differently depending on the chosen theme.*
+
+    - **Standard theme**
+
+        **First level, no category chosen**
+        ![](inline-contact-selector-standard.png)
+
+        **Second level, category chosen, contact methods displayed**
+        ![](inline-contact-selector-second-level-standard.png)
+        ![](inline-contact-selector-contact-methods-standard.png)
+
+
+    - **Iconic theme**
+
+        **First level, no category chosen**
+        ![](inline-contact-selector-iconic.png)
+
+        **Second level, category chosen, contact methods displayed**
+        ![](inline-contact-selector-second-level-iconic.png)
+        ![](inline-contact-selector-contact-methods-iconic.png)
+
+- **Contact method list** - `humany-contact-list`
+
+    Simple list of contact methods.
+
+    ![](inline-contact-list.png)
+
+
 ## Floating
 ### Main layout
 - **Header** - `humany-header`
@@ -147,6 +202,7 @@ Class | Description
     Contains the conversation with bot and user messages and the message box with a help button.
   
     ![](bot-content.png)
+    
 ### Components
 
 
@@ -154,7 +210,7 @@ Class | Description
 
 
 # **TO-DO:**
-- Document usage of data-attributes
 - Components for all widget types
+- Document usage of data-attributes
 - Interactive classes `humany-phrase-present`, `humany-category-{{current route}}` etc..
 
