@@ -21,6 +21,7 @@ Class | Description
 
 ## TO-DO:
 - Components for all widget types
+- Primary, secondary
 - Document usage of data-attributes
 - Interactive classes `humany-phrase-present`, `humany-category-{{current route}}` etc..
 
