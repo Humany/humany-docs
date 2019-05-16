@@ -30,7 +30,7 @@ Html|`humany-html`|Contains any content of html, e.g. guide bodies.
   - [x] Inline
   - [x] Floating
   - [ ] Bot
-- [ ] Transitionerna i floating.
+- [x] Transitionerna i floating.
 - [ ] Trigger-knappar (bot, floating)
 - [ ] Accordion guides (inline)
 
