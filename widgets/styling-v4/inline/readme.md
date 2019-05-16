@@ -180,8 +180,9 @@ _The `humany-inline-container` element is the inner container for the widget_
     --------------------------------|------------------
     `humany-current-route-index`    | The index view.
     `humany-current-route-contact`  | The contact view.
+    `humany-current-route-contact-method`| The contact method view, usually a single expanded contact method.
     `humany-current-route-guide`    | The guide view.
-    `humany-current-route-index`    | The text view.
+    `humany-current-route-text`    | The text view.
 
 - **Search**
 
