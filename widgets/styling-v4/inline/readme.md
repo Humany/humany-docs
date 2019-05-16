@@ -207,4 +207,4 @@ _The `humany-inline-container` element is the inner container for the widget_
 
 - **List notice**
 
-    List notices has a `humany-expanded` class whenever a list notice is expanded.
+    List notices have a `humany-expanded` class whenever the list notice is expanded.
