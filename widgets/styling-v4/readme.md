@@ -18,8 +18,7 @@ Html|`humany-html`|Contains any content of html, e.g. guide bodies.
 - [Floating](floating)
 - [Bot](bot)
 
-
-## To-do:
+## To-do
 - [x] Components for all widget types
   - [x] Inline
   - [x] Floating
