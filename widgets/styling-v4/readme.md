@@ -26,7 +26,11 @@ Html|`humany-html`|Contains any content of html, e.g. guide bodies.
   - [x] Bot
 - [ ] Primary, secondary
 - [ ] Document usage of data-attributes
-- [ ] Interactive classes `humany-phrase-present`, `humany-category-{{current route}}` etc..
+- [ ] Interactive classes
+  - [ ] Inline
+  - [ ] Floating
+  - [ ] Bot
 - [ ] Transitionerna i floating.
 - [ ] Trigger-knappar (bot, floating)
+- [ ] Accordion guides (inline)
 

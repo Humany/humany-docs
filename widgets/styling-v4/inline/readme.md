@@ -166,3 +166,44 @@
     Simple list of contact methods.
 
     ![](images/contact-list.png)
+
+## Interactive classes
+
+_The `humany-inline-container` element is the inner container for the widget_
+
+- **Current route**
+
+    Applied on the `humany-inline-container` element. 
+    The `{{route}}` in `humany-current-route-{{route}}` is replaced by the current route name.
+
+    Class                           |Description
+    --------------------------------|------------------
+    `humany-current-route-index`    | The index view.
+    `humany-current-route-contact`  | The contact view.
+    `humany-current-route-guide`    | The guide view.
+    `humany-current-route-index`    | The text view.
+
+- **Search**
+
+    Applied on the Search component.
+
+    Class|Description
+    -----|-----------
+    `humany-phrase-present`|When the input has content
+
+- **Theme**
+
+    Applied on the `humany-inline-container` element.
+
+    Class|Description
+    -----|-----------
+    `humany-theme-standard`|The standard (default) theme.
+    `humany-theme-iconic`|The iconic theme.
+
+- **Loader**
+
+    The `humany-loader` element, present in most components which contains data, has a `humany-loading` class whenever said data is being fetched.
+
+- **List notice**
+
+    List notices has a `humany-expanded` class whenever a list notice is expanded.
