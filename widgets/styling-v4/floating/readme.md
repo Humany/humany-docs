@@ -83,7 +83,36 @@
 
     ![](images/floating-foot-notices.png)
 
+    
+- **Guide** - `humany-guide`
+
+    An opened guide. Can contain contact method, dialog and feedback lists.
+
+    ![](images/floating-guide.png)
+
+    - **Feedback list** - `humany-feedback-list`
+
+    ![](images/floating-feedback-list.png)
+
+    - **Dialog list** - `humany-dialog-list`
+    
+    ![](images/floating-dialog-list.png)
+
 - **Contact method selector** - `humany-contact-list`
 
     Levels of contact method categories. If selected category has sub categories, those categories will be displayed in another level.
     If not, the contact methods within the selected category will be displayed in a contact method list.
+
+    ![](images/floating-contact-selector.png)
+
+- **Contact method list** - `humany-contact-list`
+
+    Simple list of contact methods.
+
+    ![](images/floating-contact-list.png)
+
+- **Contact button** - `humany-contact-button`
+
+    Button to navigate to the contact view. Positioned inside `humany-contact-button-wrapper` which is positioned absolutely at the bottom.
+
+    ![](images/floating-contact-button.png)
