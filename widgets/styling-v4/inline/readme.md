@@ -6,19 +6,19 @@
 
     Contains the navigation links to each of the widget tabs, top row notices, search field and middle row notices.
 
-    ![](images/inline-header.png)
+    ![](images/header.png)
   
 - **Content** - `humany-content`
 
     Contains the breadcrumb, categories, guide list, list notices, free text notices, tags and foot notices.
 
-    ![](images/inline-content.png)
+    ![](images/content.png)
 
 - **Footer** - `humany-footer`
 
     Contains the copyright.
 
-    ![](images/inline-footer.png)
+    ![](images/footer.png)
 
 ## Components
 
@@ -26,7 +26,7 @@
 
     A row with links to each tab.
 
-    ![](images/inline-tabs.png)
+    ![](images/tabs.png)
 
 - **Top and middle row notices** - `humany-top-notice, humany-middle-notice`
     
@@ -34,11 +34,11 @@
 
     - **Top:**
 
-        ![](images/inline-top-row-notices.png)
+        ![](images/top-row-notices.png)
 
     - **Middle:**
 
-        ![](images/inline-middle-row-notices.png)
+        ![](images/middle-row-notices.png)
 
 - **Search** - `humany-search`
     
@@ -48,11 +48,11 @@
 
     - **Standard theme:**
 
-        ![](images/inline-search-standard.png)
+        ![](images/search-standard.png)
 
     - **Iconic theme:**
 
-        ![](images/inline-search-iconic.png)
+        ![](images/search-iconic.png)
 
 - **Breadcrumb** - `humany-breadcrumb-list`
 
@@ -60,7 +60,7 @@
     
     *Currently only available for the iconic theme*
 
-    ![](images/inline-breadcrumb.png)
+    ![](images/breadcrumb.png)
 
 - **Category list** - `humany-category-list-wrapper`
 
@@ -72,7 +72,7 @@
     
       Displayed statically on the right hand side.
 
-      ![](images/inline-category-list-standard.png)
+      ![](images/category-list-standard.png)
 
       
     - **Iconic theme**
@@ -81,55 +81,55 @@
 
       - **No category chosen:**
 
-         ![](images/inline-category-list-iconic.png)
+         ![](images/category-list-iconic.png)
 
       - **Category chosen:**
       
-        ![](images/inline-category-list-iconic-category-chosen.png)
+        ![](images/category-list-iconic-category-chosen.png)
 
 - **Guide list** - `humany-guide-list`
 
     Contains the guide list, uses `humany-item-list`, and a loader which is shown when fetching guides.
 
-    ![](images/inline-guide-list.png)
+    ![](images/guide-list.png)
 
 - **List and free text notices** - `humany-categorized-notice-list`
 
     Contains both list and free text notices separated by category.
 
-    ![](images/inline-categorized-notice-list.png)
+    ![](images/categorized-notice-list.png)
 
     - **List notice:** - `humany-list-notice`
 
-        ![](images/inline-list-notice.png)
+        ![](images/list-notice.png)
 
     - **Expanded list notice:** - `humany-list-notice, humany-expanded`
 
-        ![](images/inline-list-notice-expanded.png)
+        ![](images/list-notice-expanded.png)
     
     - **Free text notice:** - `humany-free-text-notice`
 
-        ![](images/inline-free-text-notice.png)
+        ![](images/free-text-notice.png)
 
 - **Foot notices** - `humany-bottom-notice-list`
 
     Contains a list of all the foot notices.
 
-    ![](images/inline-foot-notices.png)
+    ![](images/foot-notices.png)
 
 - **Guide** - `humany-guide`
 
     An opened guide. Can contain contact method, dialog and feedback lists.
 
-    ![](images/inline-guide.png)
+    ![](images/guide.png)
 
     - **Feedback list** - `humany-feedback-list`
 
-    ![](images/inline-feedback-list.png)
+    ![](images/feedback-list.png)
 
     - **Dialog list** - `humany-dialog-list`
     
-    ![](images/inline-dialog-list.png)
+    ![](images/dialog-list.png)
 
 - **Contact method selector** - `humany-contact-selector`
 
@@ -142,27 +142,27 @@
 
         - **First level, no category chosen**
 
-            ![](images/inline-contact-selector-standard.png)
+            ![](images/contact-selector-standard.png)
 
         - **Second level, category chosen, contact methods displayed**
 
-            ![](images/inline-contact-selector-second-level-standard.png)
-            ![](images/inline-contact-selector-contact-methods-standard.png)
+            ![](images/contact-selector-second-level-standard.png)
+            ![](images/contact-selector-contact-methods-standard.png)
 
 
     - **Iconic theme**
 
         - **First level, no category chosen**
 
-            ![](images/inline-contact-selector-iconic.png)
+            ![](images/contact-selector-iconic.png)
 
         - **Second level, category chosen, contact methods displayed**
 
-            ![](images/inline-contact-selector-second-level-iconic.png)
-            ![](images/inline-contact-selector-contact-methods-iconic.png)
+            ![](images/contact-selector-second-level-iconic.png)
+            ![](images/contact-selector-contact-methods-iconic.png)
 
 - **Contact method list** - `humany-contact-list`
 
     Simple list of contact methods.
 
-    ![](images/inline-contact-list.png)
+    ![](images/contact-list.png)
