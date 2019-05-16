@@ -20,10 +20,10 @@ Class | Description
 
 
 ## TO-DO:
-- [ ] Components for all widget types
+- [x] Components for all widget types
   - [x] Inline
   - [x] Floating
-  - [ ] Bot
+  - [x] Bot
 - [ ] Primary, secondary
 - [ ] Document usage of data-attributes
 - [ ] Interactive classes `humany-phrase-present`, `humany-category-{{current route}}` etc..
