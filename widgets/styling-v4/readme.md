@@ -15,15 +15,25 @@ Html|`humany-html`|Contains any content of html, e.g. guide bodies.
 
 ## Widget types
 - [Inline](inline)
+  - [Main layout](inline/#main-layout)
+  - [Components](inline/#components)
+  - [Interactive classes](inline/#interactive-classes)
 - [Floating](floating)
+  - [Main layout](floating/#main-layout)
+  - [Components](floating/#components)
+  - [Interactive classes](floating/#interactive-classes)
 - [Bot](bot)
+  - [Main layout](bot/#main-layout)
+  - [Components](bot/#components)
 
 ## To-do
 - [x] Components for all widget types
   - [x] Inline
   - [x] Floating
   - [x] Bot
-- [ ] Primary, secondary
+- [ ] Main layout
+  - [x] Headers, content and footer
+  - [ ] Primary and secondary in floating and inline
 - [ ] Document usage of data-attributes
 - [ ] Interactive classes
   - [x] Inline
