@@ -1,5 +1,9 @@
 # Bot
 
+## Content
+- [Main layout](#main-layout)
+- [Components](#components)
+
 ## Main layout
 
 - **Header** - `humany-header`

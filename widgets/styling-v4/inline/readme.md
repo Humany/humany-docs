@@ -1,5 +1,11 @@
 
 # Inline
+
+## Content
+- [Main layout](#main-layout)
+- [Components](#components)
+- [Interactive classes](#interactive-classes)
+
 ## Main layout
 
 - **Header** - `humany-header`
