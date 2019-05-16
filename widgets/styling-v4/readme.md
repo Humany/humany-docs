@@ -22,7 +22,7 @@ Class | Description
 ## TO-DO:
 - [ ] Components for all widget types
   - [x] Inline
-  - [ ] Floating
+  - [x] Floating
   - [ ] Bot
 - [ ] Primary, secondary
 - [ ] Document usage of data-attributes
