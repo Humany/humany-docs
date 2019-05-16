@@ -4,13 +4,13 @@
 ## Commonly used classes
 All of our classes are prefixed with `humany-` to make it easier to scope our CSS.
 
-Class | Description
-------|------------
-`humany-link`|Base-class used for every link, except for links in guide content.
-`humany-paragraph`|Container for a `h2` title and a `div` containing any passed html. e.g. used for rendering guides.
-`humany-list`|Base-class used for every list, except for lists in guide content.
-`humany-item-list`|Contains a `humany-paragraph` and a `humany-list`.
-`humany-html`|Contains any content of html, e.g. guide bodies.
+Component | Class | Description
+----------|-------|------------
+Link|`humany-link`|Base-class used for every link, except for links in guide content.
+Paragraph|`humany-paragraph`|Container for a `h2` title and a `div` containing any passed html. e.g. used for rendering guides.
+List|`humany-list`|Base-class used for every list, except for lists in guide content.
+Item list|`humany-item-list`|Contains a `humany-paragraph` and a `humany-list`.
+Html|`humany-html`|Contains any content of html, e.g. guide bodies.
 
 
 ## Widget types
@@ -19,7 +19,7 @@ Class | Description
 - [Bot](bot)
 
 
-## TO-DO:
+## To-do:
 - [x] Components for all widget types
   - [x] Inline
   - [x] Floating
