@@ -86,7 +86,7 @@
     
 - **Guide** - `humany-guide`
 
-    An opened guide. Can contain contact method, dialog and feedback lists.
+    An opened guide. Can contain contact method-, dialog- and feedback lists.
 
     ![](images/guide.png)
 
