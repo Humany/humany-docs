@@ -1,3 +1,9 @@
+---
+path: '/widgets/styling-v4'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 # CSS in Humany Widgets
 *This documentation is intended for widgets in v4 implementations.*
 

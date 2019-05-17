@@ -1,3 +1,9 @@
+---
+path: '/widgets/versions'
+date: '2017-11-07'
+title: 'Versions'
+---
+
 # Widget versions
 
 When a breaking change is needed in the widget code a new version is branched off. Typically an upgrade to a new version requires some changes to custom CSS and custom plugins.

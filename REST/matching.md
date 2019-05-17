@@ -1,3 +1,9 @@
+---
+path: '/rest/matching'
+date: '2017-11-07'
+title: 'Matching'
+---
+
 > This documentation is valid for widget V1-V4
 
 # Matching API

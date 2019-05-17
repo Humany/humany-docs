@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/plugin-registry'
+date: '2017-11-07'
+title: 'Plugin registry'
+---
+
 # Plugin registry
 The following list contains official plugins that are ready to be used in cloud installations. Each plugin consists of a JavaScript file that should be included _after_ the Humany embed script.
 

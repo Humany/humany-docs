@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/widget-life-cycle'
+date: '2017-11-07'
+title: 'Widget life cycle'
+---
+
 # Widget life cycle
 
 A widget consists of a `$widget` object, normally referred to as "the widget", and the `$instance` object which is the instantiated widget type controlling the actual style and behaviour of the visual widget interface. The `$widget` object can be in any of the following states.

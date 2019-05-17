@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/accessability'
+date: '2017-11-07'
+title: 'Accessability'
+---
+
 # Accessibility
 All Humany widgets from V4 are WCAG combatible. To configure the accessibility settings of your widgets, use the following configuration commands.
 

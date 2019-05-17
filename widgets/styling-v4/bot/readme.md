@@ -1,3 +1,9 @@
+---
+path: '/widgets/styling-v4/bot'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 # Bot
 
 ## Content

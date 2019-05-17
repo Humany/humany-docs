@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/samples/custom-container-element'
+date: '2017-11-07'
+title: 'Custom container element'
+---
+
 # Custom container element
 The default behaviour for widget types _Floating_ and _Bot_ is to render a "floating badge" that the user must click to activate the main view of the widget. In some cases, however, you may want to render the widget inline (as in the behaviour of the _Inline_ and _List_ widget types).
 

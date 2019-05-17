@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/selectors'
+date: '2017-11-07'
+title: 'Selectors'
+---
+
 # Selectors
 Selectors can be used to search specific widgets or implementations in a Humany runtime, as well as to specify unique widgets and implementations to apply configuration commands to. A selector can be a `string` or a `Descriptor` object.
 

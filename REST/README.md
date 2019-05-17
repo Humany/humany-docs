@@ -1,3 +1,9 @@
+---
+path: '/rest/readme'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 > This documentation is valid for widget V1-V4
 
 # REST API

@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/readme'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 # Humany Widget API overview
 The following documents contain documentation for the new Humany Widget API. The API is currently available for _Bot_, _Floating_ and _Inline_ widgets on the latest platform.
 

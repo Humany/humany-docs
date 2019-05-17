@@ -1,3 +1,9 @@
+---
+path: '/widgets/adapters/custom-adapter'
+date: '2017-11-07'
+title: 'Custom Adapter'
+---
+
 # Custom adapter
 The following sample shows how to create and register a custom adapter on widgets. Custom adapters allow you to execute your own javascript code in response to posting a form in a Contact Method.
 

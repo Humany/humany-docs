@@ -1,3 +1,9 @@
+---
+path: '/widgets/styling-v2/floating/always-show-search'
+date: '2017-11-07'
+title: 'Always show search'
+---
+
 # Always show search bar 
 ```css
 /* Hide toggle button for search bar  */

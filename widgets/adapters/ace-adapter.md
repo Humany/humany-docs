@@ -1,3 +1,9 @@
+---
+path: '/widgets/adapters/ace-adapter'
+date: '2017-11-07'
+title: 'Ace Adapter'
+---
+
 # ACE adapter
 The following sample shows how to create a contact method adapter configured for ACE chat.
 

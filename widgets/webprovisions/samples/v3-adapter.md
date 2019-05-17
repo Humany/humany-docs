@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/samples/v3-adapter'
+date: '2017-11-07'
+title: 'V3 adapter'
+---
+
 # Activate widget using a V3 adapter
 This sample shows how to activate a V4 widget using a V3 custom adapter.
 

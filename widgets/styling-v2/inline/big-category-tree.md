@@ -1,3 +1,9 @@
+---
+path: '/widgets/styling-v2/inline/big-category-tree'
+date: '2017-11-07'
+title: 'Big category tree'
+---
+
 # Keep size of categories in index view on inline and lightbox widgets using iconic theme
 
 ```css

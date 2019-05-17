@@ -1,3 +1,9 @@
+---
+path: '/widgets/basic-auth'
+date: '2017-11-07'
+title: 'Basic Auth'
+---
+
 ## Basic Authentication Requirements
 Humany supports authorizing users using Basic Authentication. This feature must first be enabled by Humany on an application, then it can be enabled for a specific user, and finally widgets can be configured to include Basic Authentication headers when communicating with Humany's backend API.
 

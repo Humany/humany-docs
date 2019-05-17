@@ -1,3 +1,9 @@
+---
+path: '/widgets/adapters/callguide-adapter'
+date: '2017-11-07'
+title: 'CallGuide Adapter'
+---
+
 # CallGuide adapter
 The following sample shows how to create a contact method adapter configured for CallGuide chat.
 

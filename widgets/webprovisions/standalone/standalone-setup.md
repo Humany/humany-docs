@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/standalone/standalone-setup'
+date: '2017-11-07'
+title: 'Standalone setup'
+---
+
 # Standalone setup
 This tutorial will you guide you on how to setup a standalone widget installation using the [`@humany/cli`](https://www.npmjs.com/package/@humany/cli) utility. 
 

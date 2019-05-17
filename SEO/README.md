@@ -1,3 +1,9 @@
+---
+path: '/seo/Readme'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 > NOTE: This is widgets **V3** documentation. The [widgets **V4** documentation is over here](https://github.com/Humany/humany-docs/). For [more information about widget versions check here](https://github.com/Humany/humany-docs/widgets/versions.md).
 
 # Setting up SEO support for widgets

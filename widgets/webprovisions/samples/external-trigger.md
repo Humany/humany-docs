@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/samples/external-trigger'
+date: '2017-11-07'
+title: 'External trigger'
+---
+
 # External trigger
 This sample demonstrates how to activate a widget based on external events. The following code will activate the `'dummy'` widget when the user clicks the `'trigger'` element. 
 ```javascript

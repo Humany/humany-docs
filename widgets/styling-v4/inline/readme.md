@@ -1,3 +1,8 @@
+---
+path: '/widgets/styling-v4/inline'
+date: '2017-11-07'
+title: 'Readme'
+---
 
 # Inline
 

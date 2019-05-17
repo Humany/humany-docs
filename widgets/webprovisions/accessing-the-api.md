@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/accessing-the-api'
+date: '2017-11-07'
+title: 'Accessing the API'
+---
+
 # Accessing the API
 To enable the Widget API you need to activate version 4 on your implementation. Right-click on your implementation and select "Edit". Expand the "Versions" section and select "4 (latest)".
 

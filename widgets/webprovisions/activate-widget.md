@@ -1,3 +1,9 @@
+---
+path: '/widgets/webprovisions/activate-widget'
+date: '2017-11-07'
+title: 'Activate widget'
+---
+
 # Activating a widget
 Widgets can be activated with trigger links or manually by using the Widget API.
 

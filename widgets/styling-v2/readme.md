@@ -1,3 +1,9 @@
+---
+path: '/widgets/styling-v2'
+date: '2017-11-07'
+title: 'Readme'
+---
+
 # Documentation on how to customize Humany widgets with CSS in V2 & V3
 
 ## Inline & Lightbox 
