@@ -26,7 +26,7 @@ const navigationReportingPlugin = (container, settings) => {
 };
 ```
 
-Altough the above code attaches an event handler to the `event.subscribe()` function it is safe from a memory-leak perspective. Managed event handlers are cleared when the widget is deactivated. When using external events, however, you will need to explicitly remove any event handlers when the widget is deactivated. Use stateful plugins for that, as described below.
+Altough the above code attaches an event handler to the `events.subscribe()` function it is safe from a memory-leak perspective. Managed event handlers are cleared when the widget is deactivated. When using external events, however, you will need to explicitly remove any event handlers when the widget is deactivated. Use stateful plugins for that, as described below.
 
 ## Stateful plugins
 A statefull plugin is a constructable javascript class passed to the `plugin()` configuration command. It has the same life-cycle hooks as a widget. Optionally it can extend from the `Plugin` class, which gives convenient access to the `Widget` and `EventManager` objects.
