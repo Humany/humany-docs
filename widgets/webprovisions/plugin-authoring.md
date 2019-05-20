@@ -64,7 +64,10 @@ class StatefulPlugin extends Plugin {
 }
 
 humany.configure((config) => {
-  config.plugin(StatefulPlugin);
+  config.plugin(StatefulPlugin, {
+    selector: '.widget-click-trigger',
+    eventType: 'click',
+  });
 });
 ```
 
