@@ -25,6 +25,8 @@ Html|`humany-html`|Contains any content of html, e.g. guide bodies.
 - [Bot](bot)
   - [Main layout](bot/#main-layout)
   - [Components](bot/#components)
+- [General Examples](examples)
+  - [Chat header button styles](examples/#chat-header-button-styles)
 
 ## To-do
 - [x] Components for all widget types
