@@ -7,6 +7,8 @@ The following list contains official plugins that are ready to be used in cloud 
 ```
 
 ### Ace chat
+> This plugin is deprecated. Integrated Ace chat for Humany widgets is now part of the ACE Web SDK from version 15.1.0. Links below will be removed in the future.
+
 **English:**
 ```html
 <script src="https://hosting.humany.net/webprovisions/plugins/ace-chat/v1-en.js"></script>
