@@ -1,4 +1,4 @@
-# Technical information
+# SEO Service API reference
 
 ## Request
 Make a real-time HTTP request to Humany servers to receive pre-rendered HTML/CSS.

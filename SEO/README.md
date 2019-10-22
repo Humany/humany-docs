@@ -15,7 +15,7 @@ När man aktiverar SEO på en widget så indexeras innehållet av vår SEO servi
 
 #### Översikt
 
-![](https://humany.blob.core.windows.net/support/guides/Schema_SEO.png)
+![](schema_overview.png)
 
 Bilden ovan beskriver flödet i vår SEO-service. I detta scenario förutsätter vi att kunden har byggt och publicerat en SEO-komponent, som kontaktar vår SEO service, på sin webbserver.
 
@@ -44,7 +44,7 @@ I steg 4 och 5 renderar besökarens webbläsare sidan enligt nedan:
 *   Besökarens webbläsare fortsätter med att hämta och läsa in widgeten.
 *   När widgeten är klar visas dess innehåll.
 
-![](https://humany.blob.core.windows.net/support/guides/Ska%CC%88rmavbild%202019-10-17%20kl.%2014.15.20_2.png)
+![](schema_detailed.png)
 
 #### Köer
 
