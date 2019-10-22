@@ -94,7 +94,7 @@ The final task is to activate the default javascript widget script. Simply inclu
     })(window, document, "//{your-application-name-in-ace-knowledge}.humany.net/default/embed.js", "Humany", "script");
 
     // push-state config:
-    window.humany.configure((config) => { config({ type: '@@humany/inline-widget' }).routing({ mode: 'browser', basePath: '{base-path-goes-here}' }) });
+    window.humany.configure((config) => { config({ type: '@humany/inline-widget' }).routing({ mode: 'browser', basePath: '{base-path-goes-here}' }) });
 	</script>
 		
 The Humany embed script will now identify the pre-compiled html and replace it with the default javascript widget, working and looking the same way as you are used to. Regular users will probably not see any difference, but we have now enabled the widget to be indexed by Google and other search engines.
