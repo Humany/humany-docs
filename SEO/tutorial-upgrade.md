@@ -1,3 +1,12 @@
+# Upgrading SEO
+
+**We strongly recommend creating a copy of the widget before upgrading.**
+* Create a copy of the widget
+* Upgrade the copy to an implementation with Widget Version >= 4
+* (If using full SEO) Make the necessary changes to your site (see below) in your test environment
+* Test!
+* Rename your widget copy to its original name (and make the corresponding name changes on your site)
+
 ## SEO Light
 No changes on your site are required. See [tutorial-seo-light.md](tutorial-seo-light.md)  
 **Note** that the link to your site from the top of the widget page is missing in SEO v2, but will be re-implemented in v2.1.
