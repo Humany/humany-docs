@@ -1,5 +1,6 @@
 ## SEO Light
 No changes on your site are required. See [tutorial-seo-light.md](tutorial-seo-light.md)  
+**Note** that the link to your site from the top of the widget page is missing in SEO v2, but will be re-implemented in v2.1.
 
 ## Full SEO
 See how to implement from scratch: [tutorial-seo-full.md](tutorial-seo-full.md)  
