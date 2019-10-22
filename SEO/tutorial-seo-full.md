@@ -72,17 +72,17 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
 The response from humany also contains some headers that can be useful in order to improve SEO. Please refer to the [API documentation](api.md).
 
 ### 3. Display the widget html in your view
-When the html is fetched from the Humany SEO service you are ready to complete the view. Just put the response html in the same place the widget should be displayed. In ASP.NET MVC with Razor it would look something like this:
+When the html is fetched from the Humany SEO service you are ready to complete the view. Just put the response html in the same place the widget should be displayed, and make sure the parent element has the correct `id` and `data-base-path` attributes. In ASP.NET MVC with Razor it would look something like this:
 ```aspx
-	<div class="main">
+	<div id="humany_{your-widget-uri-name}" data-base-path="{seoBaseUrl}">
 		@Html.Raw(ViewBag.WidgetHtml)
 	</div>
 ```
 If you view the the result you should see the widget, but without styling. To apply the styling, add a reference to the following stylesheet:
 ```html
-<link href="//{your-application-name-in-ace-knowledge}.humany.net/{implementationName}/widgets.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{the-link-in-CssHref-header}" />
 ```
-**Important:** Pay attention to the `implementationName` parameter above. It must be replaced with the URI friendly name of the implementation the current Inline widget belongs to.
+
 
 ### 4. Bootstrap the Humany implementation
 The final task is to activate the default javascript widget script. Simply include the installation code for the implementation the widget belongs to. The code is available in the Humany portal on respective widget or implementation, e.g.:

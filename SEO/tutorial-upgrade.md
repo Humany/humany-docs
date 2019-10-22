@@ -25,3 +25,5 @@ The API changes are as follows:
   * Additional headers are available
 * An additional line of configuration is needed in the JavaScript:
   * `window.humany.configure((config) => { config({ type: '@@humany/inline-widget' }).routing({ mode: 'browser', basePath: '{base-path-goes-here}' }) });`
+* Add stylesheet link in `head` section `<link rel="stylesheet" type="text/css" href="{the-link-in-CssHref-header}">`
+* The element where the widget is rendered should have the id `humany_{your-widget-uri-name}` and the attribute `data-base-path="{seoBaseUrl}"`
