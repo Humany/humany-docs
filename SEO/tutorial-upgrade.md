@@ -1,7 +1,9 @@
 ## SEO Light
-No changes on your site are required.
+No changes on your site are required. See [tutorial-seo-light.md](tutorial-seo-light.md)  
 
 ## Full SEO
+See how to implement from scratch: [tutorial-seo-full.md](tutorial-seo-full.md)  
+
 The API changes are as follows:
 * The service now resides at `https://seo.humany.net` instead of `https://{your-application-name-in-ace-knowledge}.humany.net`
   * Use `https://seo.humany.net/{your-application-name-in-ace-knowledge}/{widget-name}/{path}?seoBaseUrl={seoBaseUrl}`
