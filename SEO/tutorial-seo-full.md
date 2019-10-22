@@ -85,11 +85,13 @@ If you view the the result you should see the widget, but without styling. To ap
 
 
 ### 4. Bootstrap the Humany implementation
-The final task is to activate the default javascript widget script. Simply include the installation code for the implementation the widget belongs to. The code is available in the Humany portal on respective widget or implementation, e.g.:
+The final task is to activate the default javascript widget script. Simply include the installation code for the implementation the widget belongs to. The first part of the code code is available in the Humany portal on respective widget or implementation, e.g.:
 
 	<script>
-		(function (n, t, i, r, u, f, e) { f = t.createElement(u); f.async = !0; f.src = i; e = t.getElementsByTagName(u)[0]; e.parentNode.insertBefore(f, e); n[r] = n[r] || { _c: [], configure: function (t) { n[r]._c.push(t) } } })
-		(window, document, "//{your-application-name-in-ace-knowledge}.humany.net/default/embed.js", "Humany", "script");
+    (function (a, b, c, d, e, f, g) {
+      for (var h, i = /[?&]{1}(humany[^=]*)=([^&#]*)/g; h = i.exec(a.location.search);)c += (-1 < c.indexOf("?") ? "&" : "?") + h[1] + "=" + h[2];
+      f = b.createElement(e), f.async = !0, f.src = c, g = b.getElementsByTagName(e)[0], g.parentNode.insertBefore(f, g), a[d] = a[d] || { _c: [], configure: function () { a[d]._c.push(arguments) } }; var j = d.toLowerCase(); a[j] = a[j] || { _c: [], configure: function () { a[j]._c.push(arguments) } }
+    })(window, document, "//{your-application-name-in-ace-knowledge}.humany.net/default/embed.js", "Humany", "script");
 
     // push-state config:
     window.humany.configure((config) => { config({ type: '@@humany/inline-widget' }).routing({ mode: 'browser', basePath: '{base-path-goes-here}' }) });
