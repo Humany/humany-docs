@@ -1,59 +1,56 @@
-SEO (_Search Engine Optimization_), eller _Sökmotoroptimering_ är ett samlingsnamn för de olika metoder som används för att få en webbsida att ranka så högt upp som möjligt vid sökningar på olika sökmotorer som tex. Google. Här följer en övergripande beskrivning av hur vår SEO service fungerar.
+# How does SEO for widgets in Ace Knowledge work?
 
-### Aktivera SEO på en widget
-
-Vår senaste SEO-tjänst fungerar för inline-widgets från och med version 4\. För att aktivera SEO för en widget så går du in och redigerar den widget du vill ändra under sektionen "Aktivera sökmotoroptimering" och ändrar inställningen från "SEO är inte aktiverat" till något av följande alternativ.
-
-1.  Indexera på din applikations domän _dinApplikation.humany.net_
-    *   Detta aktiverar sökmotoroptimering för din widget på den domän din applikation har hos Ace Knowledge. En användare som hittar ditt innehåll på Google kommer att hamna på en sida på denna domän och sedan länkas de vidare därifrån till den webbadress som du specificerat under steg 3 i sektionen "Bädda in på din webbplats" som ligger under SEO-sektionen när du redigerar din widget. 
-2.  Indexera på Egen domän
-    *   Detta möjliggör att du kan få innehållet i din widget indexerat på en domän som du själv kontrollerar. Detta kräver att en SEO-komponent skapas och läggs upp på din server. [Här hittar du mer information och dokumentation för hur du skapar en egen SEO-komponent.](https://github.com/Humany/humany-docs/tree/master/SEO)
+SEO (Search Engine Optimization), or Search Engine Optimization, is a collective name for the various methods used to get a web page to rank as high as possible in search results on different search engines such as Google. Here is a description of how our SEO service works.
 
 ### SEO service
 
-När man aktiverar SEO på en widget så indexeras innehållet av vår SEO service och resultatet sparas ner i en databas. Innehållet i denna databas (för-renderade HTML-sidor) kan sedan göras tillgängliga genom att kunden lägger upp en SEO-komponent på sin webbserver. I dagsläget är det endast inline-widgetar som stödjer SEO då det krävs att varje vy i widgeten har en egen unik URL.
+When you enable SEO on a widget, the content is indexed by our SEO service and the result is stored in a database. The content of this database (pre-rendered HTML pages) can then be made available when the customer creates and adds a SEO component to their web server. Only inline widgets support sour SEO service as each view in the widget is required to have its own unique URL.
 
-#### Översikt
+### Overview
 
 ![](img/schema_overview.png)
 
-Bilden ovan beskriver flödet i vår SEO-service. I detta scenario förutsätter vi att kunden har byggt och publicerat en SEO-komponent, som kontaktar vår SEO service, på sin webbserver.
+The image above describes the flow of our SEO service. In this scenario, we assume that the client has built and published an SEO component, which contacts our SEO service, on their web server.
 
-Här kan du läsa mer om hur du skapar en egen SEO-komponent. (ska bli en länk)
+[You can read more about how to create your own SEO component here](tutorial-seo-full.md).  
 
-1\. **Administratör hos kunden** aktiverar SEO på en widget i ACE knowledge administrationsgränssnitt. 
+1.  The customers administrator enables SEO on a widget in the ACE Knowledge management interface.
+2.  ACE knowledge core registers the widget in the SEO Service.
+3.  SEO crawlers ask the SEO Service for jobs.
+    *   The SEO Crawler starts indexing the widget.
+    *   The SEO Crawler reports HTML, CSS and internal links back to the SEO Service.
+    *   The process continues until all pages are indexed
+4.  The customers web page is indexed by the search engine.
+5.  Visitors search on the search engine and are linked to the customer's website
 
-2\. ACE knowledge **core** registrerar widgeten i SEO-Service.
+In steps 4 and 5, the visitor's browsers renders the page as follows:
 
-3\. SEO crawlers frågar **SEO Service** efter jobb.
+*   The customer's web server contacts ACE Knowledge's SEO Service to obtain pre-rendered HTML.
+*   The customer's web server sends pre-rendered HTML among the first calls to the visitor - the content is displayed immediately.
+*   The visitor's browser continues to fetch and load the widget.
+*   When the widget is complete, its contents is displayed.
 
-*   **SEO Crawler** börjar indexera widgeten.
+![](img/schema_overview.png)
 
-*   SEO Crawler rapporterar HTML, CSS och interna länkar tillbaka till SEO-Service.
+### Queues
 
-*   Processen fortsätter tills alla sidor är indexerade
+ACE knowledge's SEO Service has two queues with different priorities for indexing content in the widget.
 
-4\. **Sökmotorn** indexerar kundens webbsida. 
+**High-priority queue**
 
-5. **Besökare** söker på sökmotorn och länkas till kundens webbsida.
+The high-priority-queue responds to changes in ACE Knowledge Core, eg. in guides or when activating SEO on a widget. Changes detected in the high-priority queue are indexed directly and are available within 1-2 minutes.
 
-I steg 4 och 5 renderar besökarens webbläsare sidan enligt nedan:
+**Low-priority queue**
 
-*   Kundens webbserver kontaktar ACE knowledge's SEO Service för att få för-renderad HTML.
-*   Kundens webbserver skickar för-renderad HTML bland de första anropen till besökaren - innehållet visas direkt.
-*   Besökarens webbläsare fortsätter med att hämta och läsa in widgeten.
-*   När widgeten är klar visas dess innehåll.
+One example of a change running in the low-priority-queue is statistics that update the  <wbr>ACE Knowledge's top lists. Changes detected in the low-priority-queue are indexed once a day, outside of office hours, to reduce the load on ACE knowledge's servers. The low-priority-queue is run only if the high-priority queue is empty.
 
-![](img/schema_detailed.png)
 
-#### Köer
+# How do I enable SEO for a widget?
+Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
 
-ACE knowledge's SEO-Service har två köer som har olika prioritering för när innehåll i widgeten indexeras.
+1.  Index on your application domain _yourApplication.humany.net_
+    *   This enables search engine optimization for your Ace Knowledge widgets domain. A user who finds your content on Google will land on a page in this domain and be redirected to the URL you specified in step 3 of the "Embed on your site" section under the SEO section when editing your widget.
+2.  Index on Own Domain
+    *   This allows you to have your widgets contents indexed on a domain that you control yourself. This requires that you create and add an SEO component to your server. [Here you will find more information and documentation on how to create your own SEO component.](tutorial-seo-full.md)
 
-**Hög-prio-kö**
-
-Hög-prio-kön reagerar på förändringar i ACE knowledge Core, tex. i guider eller aktivering av SEO på en widget. Ändringar som upptäcks i hög-prio-kön indexeras direkt och är tillgängligt inom 1-2 minuter.
-
-**Låg-prio-kö**
-
-Exempel på förändringar som körs i låg-prio-kön är statistik som uppdaterar ACE knowledge's topplistor. Ändringar som upptäcks i låg-prio-kön indexeras en gång per dygn, utanför kontorstid, för att minska lasten på ACE knowledge's servrar. Låg-prio-kön körs endast om hög-prio-kön är tom.
+_Note: Related to the launch of our new SEO service for version 4 widgets and above, it will no longer be possible to enable SEO on older widget versions. In this case, the widget needs to be upgraded. However, if SEO is already enabled on an older widget, this SEO will continue to work._
