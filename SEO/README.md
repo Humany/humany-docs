@@ -15,7 +15,7 @@ När man aktiverar SEO på en widget så indexeras innehållet av vår SEO servi
 
 #### Översikt
 
-![](schema_overview.png)
+![](img/schema_overview.png)
 
 Bilden ovan beskriver flödet i vår SEO-service. I detta scenario förutsätter vi att kunden har byggt och publicerat en SEO-komponent, som kontaktar vår SEO service, på sin webbserver.
 
@@ -44,7 +44,7 @@ I steg 4 och 5 renderar besökarens webbläsare sidan enligt nedan:
 *   Besökarens webbläsare fortsätter med att hämta och läsa in widgeten.
 *   När widgeten är klar visas dess innehåll.
 
-![](schema_detailed.png)
+![](img/schema_detailed.png)
 
 #### Köer
 
