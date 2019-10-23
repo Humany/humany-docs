@@ -5,3 +5,4 @@
 
 ### index on humany.net ("Light")
 * The link from top of widget to your site is not available
+* No UI for setting proof of ownership (e.g. `<meta name="google-site-verification" [...]`)
