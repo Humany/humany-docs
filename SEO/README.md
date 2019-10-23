@@ -49,8 +49,8 @@ One example of a change running in the low-priority-queue is statistics that upd
 Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
 
 1.  Index on your application domain _yourApplication.humany.net_
-    *   This enables search engine optimization for your Ace Knowledge widgets domain. A user who finds your content on Google will land on a page in this domain and be redirected to the URL you specified in step 3 of the "Embed on your site" section under the SEO section when editing your widget.
+    *   This enables search engine optimization for your Ace Knowledge widgets domain. A user who finds your content on Google will land on a page in this domain and be redirected to the URL you specified in step 3 of the "Embed on your site" section under the SEO section when editing your widget. [Read more here.](tutorial-seo-light.md)
 2.  Index on Own Domain
-    *   This allows you to have your widgets contents indexed on a domain that you control yourself. This requires that you create and add an SEO component to your server. [Here you will find more information and documentation on how to create your own SEO component.](tutorial-seo-full.md)
+    *   This allows you to have your widgets contents indexed on a domain that you control yourself. This requires that you create and add an SEO component to your server. [Read more here.](tutorial-seo-full.md)
 
 _Note: Related to the launch of our new SEO service for version 4 widgets and above, it will no longer be possible to enable SEO on older widget versions. In this case, the widget needs to be upgraded. However, if SEO is already enabled on an older widget, this SEO will continue to work._
