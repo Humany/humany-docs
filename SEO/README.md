@@ -4,7 +4,7 @@ SEO (Search Engine Optimization), or Search Engine Optimization, is a collective
 
 ### SEO service
 
-When you enable SEO on a widget, the content is indexed by our SEO service and the result is stored in a database. The content of this database (pre-rendered HTML pages) can then be made available when the customer creates and adds a SEO component to their web server. Only inline widgets support sour SEO service as each view in the widget is required to have its own unique URL.
+When you enable SEO on a widget, the content is indexed by our SEO service and the result is stored in a database. The content of this database (pre-rendered HTML pages) can then be made available when the customer creates and adds a SEO component to their web server. Only inline widgets supports our SEO service as each view in the widget is required to have its own unique URL.
 
 ### Overview
 
