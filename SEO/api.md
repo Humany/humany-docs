@@ -18,7 +18,7 @@ URL that you are requesting will be canonized according to the widget URL canoni
 ## Response
 
 ### Timeout and response code
-The SEO service should be expected to respond within 4000ms. Timeout or any error code should be treated as non-signifact for the end-user and the page should be delivered to the end-user as if SEO was not active. Timeout and errors should be logged for performance monitoring and investigation of errors.
+The SEO service should be expected to respond within 4000ms. **Timeout or any error code should be treated as non-signifact for the end-user and the page should be delivered to the end-user as if SEO was not active.** Timeout and errors should be logged for performance monitoring and investigation of errors.
 
 Common codes
 - HTTP CODE 403 - if the page or parts of the page are not publicly accessible
