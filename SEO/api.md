@@ -3,7 +3,7 @@
 ## Request
 Make a real-time HTTP request to Humany servers to receive pre-rendered HTML/CSS.
 
-`https://seo.humany.net/v1/{tenant}/{widget}/{route}?{querystring}&seoBaseUrl={seoBaseUrl}`
+`https://seo.humany.net/v2/{tenant}/{widget}/{route}?{querystring}&seoBaseUrl={seoBaseUrl}`
 
 Parameter | Description | Required | Example
 --- | --- | --- | ---
