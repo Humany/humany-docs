@@ -54,3 +54,6 @@ Our latest SEO service works for inline widgets from version 4 and above. To ena
     *   This allows you to have your widgets contents indexed on a domain that you control yourself. This requires that you create and add an SEO component to your server. [Read more here.](tutorial-seo-full.md)
 
 _Note: Related to the launch of our new SEO service for version 4 widgets and above, it will no longer be possible to enable SEO on older widget versions. In this case, the widget needs to be upgraded. However, if SEO is already enabled on an older widget, this SEO will continue to work._
+
+## Example implementation
+For widgets (v4 or higher) with SEO enabled, example implementation can be seen on https://humany-customer-seo.azurewebsites.net
