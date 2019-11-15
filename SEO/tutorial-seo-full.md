@@ -35,15 +35,15 @@ Moving on to the controller, you will use the above `path` parameter to call the
 
 **Pattern for the request:**
 ```
-GET https://seo.humany.net/v1/{your-application-name-in-ace-knowledge}/{widget-name}/{path}?seoBaseUrl={seoBaseUrl}
+GET https://seo.humany.net/v2/{your-application-name-in-ace-knowledge}/{widget-name}/{path}?seoBaseUrl={seoBaseUrl}
 ```
 In our example, lets assume the Inline widget is named "customer-service", and your application in ACE Knowledge is called "seo-customer". The request for the start-view would then look like this:
 ```
-GET https://seo.humany.net/v1/seo-customer/customer-service/?seoBaseUrl=/help
+GET https://seo.humany.net/v2/seo-customer/customer-service/?seoBaseUrl=/help
 ```
 For a request to www.example.com/help/contact, the call to the Humany SEO service should look like this:
 ```
-GET https://seo.humany.net/v1/seo-customer/customer-service/contact?seoBaseUrl=/help
+GET https://seo.humany.net/v2/seo-customer/customer-service/contact?seoBaseUrl=/help
 ```
 The result from the service is plain html and is ready to be rendered as part of your default layout.
 
@@ -63,7 +63,7 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
 
   // Build the remote url and append the above query strings
   var myApplication = "seo-customer";
-  var url = new UriBuilder($"https://seo.humany.net/v1/{myApplication}/{widgetName}/path");
+  var url = new UriBuilder($"https://seo.humany.net/v2/{myApplication}/{widgetName}/path");
   url.Query = queryString.ToString();
 
   // Download and return content as a string (using HTTP GET)
