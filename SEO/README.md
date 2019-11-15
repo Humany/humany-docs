@@ -30,7 +30,7 @@ In steps 4 and 5, the visitor's browsers renders the page as follows:
 *   The visitor's browser continues to fetch and load the widget.
 *   When the widget is complete, its contents is displayed.
 
-![](img/schema_overview.png)
+![](img/schema_detailed.png)
 
 ### Queues
 
