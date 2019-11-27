@@ -49,13 +49,13 @@ The result from the service is plain html and is ready to be rendered as part of
 
 Sample C# code for the controller action:
 ```csharp
-public ActionResult Index(string path)
+public async Task<ActionResult> Index(string path)
 {
-  ViewBag.WidgetHtml = DownloadWidgetHtml("customer-service", "/help", path);
+  ViewBag.WidgetHtml = await DownloadWidgetHtml("customer-service", "/help", path);
   return View();
 }
 
-private string DownloadWidgetHtml(string widgetName, string basePath, string path)
+private async Task<string> DownloadWidgetHtml(string widgetName, string basePath, string path)
 {
   // Add "mode" and "base" to the existing query string collection
   var queryString = HttpUtility.ParseQueryString(Request.Url.Query);
