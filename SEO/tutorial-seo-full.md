@@ -69,11 +69,18 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
   // Download and return content as a string (using HTTP GET)
   using (var client = new HttpClient())
   {
-    var response = await client.GetAsync(ub.Uri);
-    // Note: regular widget will load even if we get e.g. a 404 here
-    // (could be b/c page hasn't been indexed yet)
-    if (!response.IsSuccessStatusCode) return "";
-    return await response.Content.ReadAsStringAsync();
+    try
+    {
+      var response = await client.GetAsync(ub.Uri);
+      // Note: regular widget will load even if we get e.g. a 404 here
+      // (could be because page hasn't been indexed yet)
+      if (!response.IsSuccessStatusCode) return "";
+      return await response.Content.ReadAsStringAsync();
+    }
+    catch (HttpRequestException ex)
+    {
+      return "";
+    }
   }
 }
 ```
