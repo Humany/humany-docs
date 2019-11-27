@@ -79,7 +79,7 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
     }
     catch (HttpRequestException ex)
     {
-      return "";
+      return ""; //E.g. network connectivity, DNS failure, server certificate validation or timeout
     }
   }
 }
