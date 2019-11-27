@@ -51,11 +51,14 @@ Sample C# code for the controller action:
 ```csharp
 public async Task<ActionResult> Index(string path)
 {
-  ViewBag.WidgetHtml = await DownloadWidgetHtml("customer-service", "/help", path);
+  var cts = new CancellationTokenSource();
+  cts.CancelAfter(4000); //Specify timeout 4000 ms
+
+  ViewBag.WidgetHtml = await DownloadWidgetHtml("customer-service", "/help", path, cts.Token);
   return View();
 }
 
-private async Task<string> DownloadWidgetHtml(string widgetName, string basePath, string path)
+private async Task<string> DownloadWidgetHtml(string widgetName, string basePath, string path, CancellationToken? cancellationToken = null)
 {
   // Add "mode" and "base" to the existing query string collection
   var queryString = HttpUtility.ParseQueryString(Request.Url.Query);
@@ -71,7 +74,7 @@ private async Task<string> DownloadWidgetHtml(string widgetName, string basePath
   {
     try
     {
-      var response = await client.GetAsync(ub.Uri);
+      var response = await client.GetAsync(ub.Uri, cancellationToken == null ? CancellationToken.None : cancellationToken.Value);
       // Note: regular widget will load even if we get e.g. a 404 here
       // (could be because page hasn't been indexed yet)
       if (!response.IsSuccessStatusCode) return "";
