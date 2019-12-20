@@ -49,13 +49,13 @@ The result from the service is plain html and is ready to be rendered as part of
 
 Sample C# code for the controller action:
 ```csharp
-public ActionResult Index(string path)
+public async Task<ActionResult> Index(string path)
 {
-  ViewBag.WidgetHtml = DownloadWidgetHtml("customer-service", "/help", path);
+  ViewBag.WidgetHtml = await DownloadWidgetHtml("customer-service", "/help", path, TimeSpan.FromSeconds(4));
   return View();
 }
 
-private string DownloadWidgetHtml(string widgetName, string basePath, string path)
+private async Task<string> DownloadWidgetHtml(string widgetName, string basePath, string path, TimeSpan? timeout = null)
 {
   // Add "mode" and "base" to the existing query string collection
   var queryString = HttpUtility.ParseQueryString(Request.Url.Query);
@@ -63,12 +63,26 @@ private string DownloadWidgetHtml(string widgetName, string basePath, string pat
 
   // Build the remote url and append the above query strings
   var myApplication = "seo-customer";
-  var url = new UriBuilder($"https://seo.humany.net/v2/{myApplication}/{widgetName}/path");
+  var url = new UriBuilder($"https://seo.humany.net/v2/{myApplication}/{widgetName}/{path}");
   url.Query = queryString.ToString();
 
   // Download and return content as a string (using HTTP GET)
-  using (var client = new WebClient())
-    return client.DownloadString(url.ToString());
+  using (var client = new HttpClient())
+  {
+    if (timeout.HasValue) client.Timeout = timeout.Value;
+    try
+    {
+      var response = await client.GetAsync(ub.Uri);
+      // Note: regular widget will load even if we get e.g. a 404 here
+      // (could be because page hasn't been indexed yet)
+      if (!response.IsSuccessStatusCode) return "";
+      return await response.Content.ReadAsStringAsync();
+    }
+    catch (HttpRequestException ex)
+    {
+      return ""; //E.g. network connectivity, DNS failure, server certificate validation or timeout
+    }
+  }
 }
 ```
 
