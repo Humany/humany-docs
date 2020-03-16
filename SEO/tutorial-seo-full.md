@@ -1,4 +1,4 @@
-NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/v3/seo). For [more information about widget versions check here](https://github.com/Humany/humany-docs/widgets/versions.md).
+NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/v3/seo). For [more information about widget versions check here](https://github.com/Humany/humany-docs/blob/master/widgets/versions.md).
 
 See [Known issues](known-issues.md)  
 
