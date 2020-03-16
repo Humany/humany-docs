@@ -45,4 +45,4 @@ All timestamps are UTC, sortable ISO 8601.
 - `HumanyGuideModifiedOn` - optional, latest time when the guide was modified
 
 ### HTML and CSS
-Response body is HTML, which can include inline CSS (used mainly in implementation V5). Whole body can be directly injected into your page. These is no need to separate HTML and CSS.
+Response body is HTML, which can include inline CSS (used mainly in V5). Whole body can be directly injected into your page. These is no need to separate HTML and CSS.
