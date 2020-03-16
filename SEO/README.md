@@ -46,7 +46,7 @@ One example of a change running in the low-priority-queue is statistics that upd
 
 
 # How do I enable SEO for a widget?
-Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
+Our latest SEO service works for inline TODO widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
 
 1.  Index on your application domain _yourApplication.humany.net_
     *   This enables search engine optimization for your Ace Knowledge widgets domain. A user who finds your content on Google will land on a page in this domain and be redirected to the URL you specified in step 3 of the "Embed on your site" section under the SEO section when editing your widget. [Read more here.](tutorial-seo-light.md)
