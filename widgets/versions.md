@@ -1,5 +1,9 @@
 # Widget versions
 
+A widget does have version on its own, but inherits version from the implementation it belongs to. Upgrading a widget can be achieved via
+- pointing out another implementation
+- or, upgrading the implementation that the widget belongs to
+
 When a breaking change is needed in the widget code a new version is branched off. Typically an upgrade to a new version requires some changes to custom CSS and custom plugins.
 
 ## V1
