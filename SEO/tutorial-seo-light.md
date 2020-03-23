@@ -3,4 +3,4 @@ NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is
 If you choose to implement SEO indexing on ACE Knowledge site, no changes are needed on your own site.
 However, using this setup, search engines will link to {your-application-name-in-ace-knowledge}.humany.net rather than your own domain.
 
-In our old version of SEO light, we provided a link on the top of the page to your own site. This will be implemented in SEO version 2.1. See [known-issues.md](known-issues.md)  
+In our old version of SEO Light, we provided a link on the top of the page to your own site. This will be implemented in SEO version 2.1. See [known-issues.md](known-issues.md)  
