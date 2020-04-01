@@ -38,11 +38,18 @@ All header values are URL-encoded, to support line-breaks and non-ASCII characte
 All timestamps are UTC, sortable ISO 8601.
 
 - `HumanyCanonical` - canonical URL
-- `HumanyContentRenderedOn` - time when the page was indexed
+- `HumanyContentRenderedOn` - time when the page was crawled and rendered by ACE Knowledge (Humany)
 - `HumanyContentModifiedOn` - latest time when the page contents has changed, by comparison of HTML/CSS and headers
 - `HumanyCssHref` - optional, fully qualified URL to CSS that must be included on the page, preferably in the `<head>` tag
-- `HumanyPageTitle` - optional, available on guide and category pages
-- `HumanyGuideModifiedOn` - optional, latest time when the guide was modified
+- `HumanyPageTitle` - optional, available on guide and category pages, can be used as page `<title>` in `<head>`
+- `HumanyPageDescription` - optional, available on guide pages
+  - Your server should inject `<meta name="description" content="{value}"/>` into `<head>`. Remember to HTML-encode the value.
+- `HumanyRobotsAllowIndexing` - optional, default is `true`. If present and the value is `false`, then the page (currenly guides only) has requested not to be indexed by search engines.
+  - Your server should inject `<meta name="robots" content="noindex"/>` into `<head>`.
+  - HTML content will be empty.
+  - Headers `HumanyCssHref`, `HumanyPageTitle` and `HumanyPageDescription` will not be provided.
+  - This does not imply no-follow.
+- `HumanyGuideModifiedOn` - optional, available on guide pages, latest time when the guide was modified
 
 ### HTML and CSS
 Response body is HTML, which can include inline CSS (used mainly in V5). Whole body can be directly injected into your page. These is no need to separate HTML and CSS.
