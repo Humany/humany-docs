@@ -38,6 +38,7 @@ All header values are URL-encoded, to support line-breaks and non-ASCII characte
 All timestamps are UTC, sortable ISO 8601.
 
 - `HumanyCanonical` - canonical URL
+  - Your server should inject `<link rel="canonical" href="{value}" />` into `<head>`. Remember to HTML-encode the value.
 - `HumanyContentRenderedOn` - time when the page was crawled and rendered by ACE Knowledge (Humany)
 - `HumanyContentModifiedOn` - latest time when the page contents has changed, by comparison of HTML/CSS and headers
 - `HumanyCssHref` - optional, fully qualified URL to CSS that must be included on the page, preferably in the `<head>` tag
