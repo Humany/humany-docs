@@ -63,8 +63,6 @@ How quickly are modifications made in ACE Knowledge Admin reflected in the SEO S
 `IMMEDIATE`: handled as soon as the SEO service receives the event (normally within a few minutes)  
 `HIGH`: put in high-priority queue  
 `LOW`: put in low-priority queue  
-*TODO Lauri: perhaps discuss propagation of DependencyEntityIds?*
-
 
 # How do I enable SEO for a widget?
 Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
