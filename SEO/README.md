@@ -44,6 +44,25 @@ The high-priority-queue responds to changes in ACE Knowledge Core, eg. in guides
 
 One example of a change running in the low-priority-queue is statistics that update the  <wbr>ACE Knowledge's top lists. Changes detected in the low-priority-queue are indexed once a day, outside of office hours, to reduce the load on ACE knowledge's servers. The low-priority-queue is run only if the high-priority queue is empty.
 
+**Overview ACE Knowledge events**  
+How quickly are modifications made in ACE Knowledge Admin reflected in the SEO Service?
+
+* Widgets
+  * Deleted: `IMMEDIATE`
+  * Changed name: previous urls removal `IMMEDIATE`, new urls `HIGH`
+  * Changed SEO status to Off: `IMMEDIATE`
+  * Changed SEO status to not Off: `HIGH`
+  * Other changes: `HIGH`
+* Implementations
+  * Any change: `HIGH` - will be sent for all widgets that are using the implementation and have SEO enabled
+* Guides
+  * Delete/unpublish: `IMMEDIATE`
+  * Undelete/publish: `HIGH`
+* Other: `LOW`
+  
+`IMMEDIATE`: handled as soon as the SEO service receives the event (normally within a few minutes)  
+`HIGH`: put in high-priority queue  
+`LOW`: put in low-priority queue  
 
 # How do I enable SEO for a widget?
 Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
