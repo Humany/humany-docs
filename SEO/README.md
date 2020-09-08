@@ -54,7 +54,7 @@ How quickly are modifications made in ACE Knowledge Admin reflected in the SEO S
   * Changed SEO status to not Off: `HIGH`
   * Other changes: `HIGH`
 * Implementations
-  * Any change: `HIGH` - will be sent for any widget with SEO enabled using the implementation
+  * Any change: `HIGH` - will be sent for all widgets that are using the implementation and have SEO enabled
 * Guides
   * Delete/unpublish: `IMMEDIATE`
   * Undelete/publish: `HIGH`
