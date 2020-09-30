@@ -55,5 +55,7 @@ Our latest SEO service works for inline widgets from version 4 and above. To ena
 
 _Note: Related to the launch of our new SEO service for version 4 widgets and above, it will no longer be possible to enable SEO on older widget versions. In this case, the widget needs to be upgraded. However, if SEO is already enabled on an older widget, this SEO will continue to work._
 
+_Note: Widgets displaying guides as accordion will be rendered as if accordion display was turned off during the crawl. For the user browsing the widget, accordion display will work as usual except there will be a slight graphic change when being directly linked to a guide. This is due to the fact that the HTML will differ as it was crawled without accordion display._
+
 ## Example implementation
 For widgets (v4 or higher) with SEO enabled, example implementation can be seen on https://seo-example.humany.net
