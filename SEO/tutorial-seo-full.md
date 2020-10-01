@@ -1,9 +1,9 @@
-NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/v3/seo). For [more information about widget versions check here](https://github.com/Humany/humany-docs/widgets/versions.md).
+NOTE: This is widgets **V4** documentation. The [widgets **V3** documentation is over here](https://github.com/Humany/humany-docs/tree/v3/seo). For [more information about widget versions check here](https://github.com/Humany/humany-docs/blob/master/widgets/versions.md).
 
 See [Known issues](known-issues.md)  
 
 # Setting up SEO support for widgets
-This tutorial describes, in a few simple steps, how to implement full SEO support for your Humany widget. The full SEO support is currently only available for Inline widgets.
+This tutorial describes, in a few simple steps, how to implement SEO Full support for your Humany widget. The SEO support is currently only available for Inline widgets.
 
 Take a look at [this repository](https://github.com/Humany/humany-customer-seo) for a reference implementation in .NET Core 3.
 [Here](api.md) is the API documentation for the SEO service.
