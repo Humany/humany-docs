@@ -44,6 +44,25 @@ The high-priority-queue responds to changes in ACE Knowledge Core, eg. in guides
 
 One example of a change running in the low-priority-queue is statistics that update the  <wbr>ACE Knowledge's top lists. Changes detected in the low-priority-queue are indexed once a day, outside of office hours, to reduce the load on ACE knowledge's servers. The low-priority-queue is run only if the high-priority queue is empty.
 
+**Overview ACE Knowledge events**  
+How quickly are modifications made in ACE Knowledge Admin reflected in the SEO Service?
+
+* Widgets
+  * Deleted: `IMMEDIATE`
+  * Changed name: previous urls removal `IMMEDIATE`, new urls `HIGH`
+  * Changed SEO status to Off: `IMMEDIATE`
+  * Changed SEO status to not Off: `HIGH`
+  * Other changes: `HIGH`
+* Implementations
+  * Any change: `HIGH` - will be sent for all widgets that are using the implementation and have SEO enabled
+* Guides
+  * Delete/unpublish: `IMMEDIATE`
+  * Undelete/publish: `HIGH`
+* Other: `LOW`
+  
+`IMMEDIATE`: handled as soon as the SEO service receives the event (normally within a few minutes)  
+`HIGH`: put in high-priority queue  
+`LOW`: put in low-priority queue  
 
 # How do I enable SEO for a widget?
 Our latest SEO service works for inline widgets from version 4 and above. To enable SEO for a widget, you edit it under the "Enable Search Engine Optimization" section and change the setting from "SEO is not enabled" to any of the following alternatives:
@@ -55,5 +74,7 @@ Our latest SEO service works for inline widgets from version 4 and above. To ena
 
 _Note: Related to the launch of our new SEO service for version 4 widgets and above, it will no longer be possible to enable SEO on older widget versions. In this case, the widget needs to be upgraded. However, if SEO is already enabled on an older widget, this SEO will continue to work._
 
-## Example implementation
-For widgets (v4 or higher) with SEO enabled, example implementation can be seen on https://seo-example.humany.net
+_Note: Widgets displaying guides as accordion will be rendered as if accordion display was turned off during the crawl. For the user browsing the widget, accordion display will work as usual except there will be a slight graphic change when being directly linked to a guide. This is due to the fact that the HTML will differ as it was crawled without accordion display._
+
+## Example
+For widgets (V4 or higher) with SEO enabled, example can be seen on https://seo-example.humany.net
