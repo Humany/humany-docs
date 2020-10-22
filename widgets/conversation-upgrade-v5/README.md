@@ -23,6 +23,7 @@ This document outlines how to update an existing One Widget configuration to wor
   * [Editor tab `Chat Section`](#editor-tab-chat-section)
     * [Layout and style changes in the `components` object](#editor-tab-chat-section)
     * [Updating the `trigger` object](#editor-tab-chat-section)
+* [Plugins in self-hosting scenarios](#plugins-in-self-hosting-scenarios)
 
 ## Introduction
 
@@ -93,7 +94,7 @@ This demonstrates the schema of a widget's configuration at the top level and it
 ## Instructions: *Floating*
 
 ### Editor tab `General`
-The *Floating* type's changes only affect the `General` configuraion.
+The *Floating* type's changes only affect the `General` configuration.
 
 #### Adding conversation-related component definitions to the `components` object.
 <details>
