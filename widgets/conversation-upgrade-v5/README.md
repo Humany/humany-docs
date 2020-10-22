@@ -44,7 +44,7 @@ For widgets created with an *Inline* template (*Iconic* or *Classic*):
 
 
 ### How to interpret the example code
-Most of the sections in this document provide snippets of json data that needs to be changed. To increase readability and reduce clutter we have omitted properties that remain unchanged and highlight only the changes that are should be performed, while maintaining their context from the top level. In many cases a `diff` syntax is utilized to visualize what entries have been added and removed respectively:
+Most of the sections in this document provide snippets of json data that needs to be changed. To increase readability and reduce clutter we have omitted properties that remain unchanged and highlight only the changes that should be performed, while maintaining their context from the top level. In many cases a `diff` syntax is utilized to visualize what entries have been added and removed respectively:
 
 In the following example a property `propertyA` of the `components` object has been removed and replaced with `propertyB`. In the actual json configuration there may or may not be other properties alongside those described here. You can assume that these should remain unmodified.
 ```diff
