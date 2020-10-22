@@ -405,3 +405,48 @@ The *Floating* type's changes only affect the `General` configuraion.
 }
 ```
 </details>
+
+## Plugins in self-hosting scenarios
+
+In case of a self-hosting environment there are a few new plugins that will need to be registered during activation of the widget.
+
+<details>
+<summary>Show example</summary>
+
+``` diff
+
+import { Widget } from '@humany/widget-types-grid';
+import {
+  // ... component plugins
+} from '@humany/widget-components';
++import { ConversationComponent, ConversationReturnButtonComponent } from '@humany/widget-conversation';
+import {
+  LegacyResourcesPlugin,
+  ModalPlugin,
+  AutoScrollPlugin,
++  MiscBehaviorPlugin,
+} from '@humany/widget-plugins';
+
+(async () => {
+  const humany = window.humany = Humany.createFromGlobal(window.humany);
+
+  const implementation = humany.createImplementation(config);
+
+  bootstrap(implementation, (config) => {
+    config.types.register(
+      '@humany/grid-widget',
+      Widget,
+    );
+
+    config
+      // ..other plugins
+      .plugin(LegacyResourcesPlugin, { initialCss })
++     .plugin(ConversationComponent)
++     .plugin(ConversationReturnButtonComponent)
++     .plugin('misc-behavior', MiscBehaviorPlugin);
+  });
+
+})();
+````
+
+</details>
