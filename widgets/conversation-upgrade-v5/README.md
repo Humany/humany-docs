@@ -99,52 +99,52 @@ The *Floating* type's changes only affect the `General` configuraion.
 <details>
 <summary>Show example</summary>
 
-``` json
+``` diff
 {
   "components": {
     // other components ...,
-    "conversation": {
-      "type": "conversation",
-      "properties": {
-        "inputHidden": true,
-        "inputDisabled": true,
-        "inputPlaceholder": "Type your message here...",
-        "sendButtonLabel": "Send message",
-        "userLabel": "Me"
-      },
-      "context": {
-          "fonts": {
-          "small": "0.9em"
-          },
-          "colors": {
-          "accent": "#FFF"
-          },
-          "inputBorder": "1px solid #767676"
-      }
-    },
-    "conversation-return-button": {
-      "type": "conversation-return-button",
-      "properties": {
-        "label": "Ongoing chat - Click here to return",
-        "active": false,
-        "mode": "flashingGradient",
-        "alert": {
-          "symbol": {
-            "type": "Svg",
-            "content": "chat-new"
-          }
-        }
-      },
-      "context": {
-        "colors": {
-          "accent": "#32164B",
-          "text": "white"
-        },
-        "accessibility": {
-          "border": "2px dashed #990AE3"
-        }
-      }
-    }
++   "conversation": {
++     "type": "conversation",
++     "properties": {
++       "inputHidden": true,
++       "inputDisabled": true,
++       "inputPlaceholder": "Type your message here...",
++       "sendButtonLabel": "Send message",
++       "userLabel": "Me"
++     },
++     "context": {
++         "fonts": {
++         "small": "0.9em"
++         },
++         "colors": {
++         "accent": "#FFF"
++         },
++         "inputBorder": "1px solid #767676"
++     }
++   },
++   "conversation-return-button": {
++     "type": "conversation-return-button",
++     "properties": {
++       "label": "Ongoing chat - Click here to return",
++       "active": false,
++       "mode": "flashingGradient",
++       "alert": {
++         "symbol": {
++           "type": "Svg",
++           "content": "chat-new"
++         }
++       }
++     },
++     "context": {
++       "colors": {
++         "accent": "#32164B",
++         "text": "white"
++       },
++       "accessibility": {
++         "border": "2px dashed #990AE3"
++       }
++     }
++   }
   }
 }
 ```
@@ -279,6 +279,7 @@ The *Floating* type's changes only affect the `General` configuraion.
 
 <details>
 <summary>Show details</summary>
+
 ``` diff
 {
   "views": {
