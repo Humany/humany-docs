@@ -7,11 +7,11 @@ Make a real-time HTTP request to Humany servers to receive pre-rendered HTML/CSS
 
 Parameter | Description | Required | Example
 --- | --- | --- | ---
-`tenant` | Your customer identifier, same as in Humany Core administration | yes | demobolaget
+`tenant` | Your customer identifier, same as in Humany Core administration | yes | customer
 `widget` | From widgets base-URL | yes | inline_demo
 `route` | Route within the widget | optional
 `querystring` | | optional
-`seoBaseUrl` | Change widget links to be based upon `seoBaseUrl`. Should start with `/`, which is automatically added if not provided. | optional | %2fkundtjanst
+`seoBaseUrl` | Change widget links to be based upon `seoBaseUrl`. Should start with `/`, which is automatically added if not provided. | optional | %2fsupport
 
 URL that you are requesting will be canonized according to the widget URL canonization rules. Querystring parameters will be sorted and insignificant parameters will be removed. Rules for canonization **will change over time**.
 
