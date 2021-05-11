@@ -122,6 +122,7 @@ By default the floating template has three different views for browsing (`index`
     "guide-list": {
       "properties": {
 +       "routes": {
+-         "page": "search"
 +         "page": "index"
 +       }
       }
@@ -129,6 +130,7 @@ By default the floating template has three different views for browsing (`index`
     "tag-list": {
       "properties": {
         [...]
+-       "route": "search"
 +       "route": "index"
       }
     },
@@ -162,7 +164,7 @@ By default the floating template has three different views for browsing (`index`
 +     "path": [
 +       "/",
 +       "/c:guideCategory(\\d+)-:uriName"
-+     ]
++     ],
       "entry": "index-area"
     },
 -    "browse": {
