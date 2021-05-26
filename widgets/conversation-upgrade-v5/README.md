@@ -384,7 +384,13 @@ The *Floating* type's changes only affect the `General` configuration.
 -           "tooltip": "Close chat"
 -         },
         } 
-      }
+      },
++     "context": {
++       "border": "2px dashed #FFFFFF",
++       "colors": {
++           "inactiveText": "#FFFFFF"
++       }
++     }
     }
   }
 }
