@@ -17,7 +17,7 @@ See how to implement from scratch: [tutorial-seo-full.md](tutorial-seo-full.md)
 
 The API changes are as follows:
 * The service now resides at `https://seo.humany.net` instead of `https://{your-application-name-in-ace-knowledge}.humany.net`
-  * Use `https://seo.humany.net/{your-application-name-in-ace-knowledge}/{widget-name}/{path}?seoBaseUrl={seoBaseUrl}`
+  * Use `https://seo.humany.net/v2/{your-application-name-in-ace-knowledge}/{widget-name}/{path}?seoBaseUrl={seoBaseUrl}`
   * **Not** `https://{your-application-name-in-ace-knowledge}.humany.net/{widget-name}/{path}?mode=seo&base={base}`
 * Response headers have changed:
   * `Page-Description` has been removed
